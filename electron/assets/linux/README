@@ -1,0 +1,19 @@
+laqpay
+=======
+
+
+The laqpay client binary uses a localhost http interface for its GUI.
+By default it runs on http://127.0.0.1:12176.  This is configurable with
+
+    --web-interface-port
+    --web-interface-addr
+
+To see a list of all options, use the -h flag.
+
+The laqpay.run script starts the laqpay client binary and opens the interface
+in your browser with xdg-open.  It is not aware of any changes to laqpay client's
+web interface configuration, you can override the url with LAQPAY_WEB_URL or
+by editing the laqpay.url file.
+
+If there is no webpage available, try reloading the page. The page may have opened
+before the laqpay client finished loading.

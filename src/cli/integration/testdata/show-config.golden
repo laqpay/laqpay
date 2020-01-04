@@ -1,0 +1,5 @@
+{
+	"data_directory": "IGNORED/.laqpay",
+	"coin": "laqpay",
+	"rpc_address": "http://127.0.0.1:1024"
+}
