@@ -1,5 +1,3 @@
-![laqpay logo](https://user-images.githubusercontent.com/26845312/32426705-d95cb988-c281-11e7-9463-a3fce8076a72.png)
-
 # Laqpay
 
 [![Build Status](https://travis-ci.com/laqpay/laqpay.svg)](https://travis-ci.com/laqpay/laqpay)
