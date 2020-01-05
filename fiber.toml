@@ -10,7 +10,7 @@ genesis_timestamp = 1578207105
 default_connections = [
     "138.201.196.174:6000",
 ]
-peer_list_url = "https://downloads.laqpay.net/blockchain/peers.txt"
+peer_list_url = "https://downloads.laqpay.com/blockchain/peers.txt"
 
 [params]
 distribution_addresses = [

@@ -31,10 +31,10 @@ scratch, to remedy the rough edges in the Bitcoin design.
 
 ## Links
 
-* [laqpay.net](https://www.laqpay.net)
-* [Laqpay Blog](https://www.laqpay.net/blog)
-* [Laqpay Docs](https://www.laqpay.net/docs)
-* [Laqpay Blockchain Explorer](https://explorer.laqpay.net)
+* [laqpay.com](https://www.laqpay.com)
+* [Laqpay Blog](https://www.laqpay.com/blog)
+* [Laqpay Docs](https://www.laqpay.com/docs)
+* [Laqpay Blockchain Explorer](https://explorer.laqpay.com)
 * [Laqpay Development Telegram Channel](https://t.me/laqpaydev)
 * [Laqpay Github Wiki](https://github.com/laqpay/laqpay/wiki)
 
@@ -209,7 +209,7 @@ and useful tools included in `laqpay/laqpaydev-cli`.
 ## Contributing a node to the network
 
 Add your node's `ip:port` to the [peers.txt](peers.txt) file.
-This file will be periodically uploaded to https://downloads.laqpay.net/blockchain/peers.txt
+This file will be periodically uploaded to https://downloads.laqpay.com/blockchain/peers.txt
 and used to seed client with peers.
 
 *Note*: Do not add Laqwire nodes to `peers.txt`.
@@ -667,7 +667,7 @@ Performs these actions before releasing:
     * Load a test wallet with nonzero balance from seed to confirm wallet loading works
     * Send coins to another wallet to confirm spending works
     * Restart the client, confirm that it reloads properly
-* For both the Android and iOS mobile wallets, configure the node url to be https://staging.node.laqpay.net
+* For both the Android and iOS mobile wallets, configure the node url to be https://staging.node.laqpay.com
   and test all operations to ensure it will work with the new node version.
 
 #### Creating release builds
@@ -702,7 +702,7 @@ https://gist.github.com/gz-c/de3f9c43343b2f1a27c640fe529b067c
 
 ## Responsible Disclosure
 
-Security flaws in laqpay source or infrastructure can be sent to security@laqpay.net.
+Security flaws in laqpay source or infrastructure can be sent to security@laqpay.com.
 Bounties are available for accepted critical bug reports.
 
 PGP Key for signing:

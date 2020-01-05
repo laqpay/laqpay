@@ -11,7 +11,7 @@ default_connections = [
 	"138.201.196.174:6000",
 ]
 launch_browser = true
-peer_list_url = "https://downloads.laqpay.net/blockchain/peers.txt"
+peer_list_url = "https://downloads.laqpay.com/blockchain/peers.txt"
 unconfirmed_burn_factor = 10
 unconfirmed_max_transaction_size = 777
 unconfirmed_max_decimals = 3

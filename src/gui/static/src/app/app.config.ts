@@ -2,11 +2,11 @@ export const AppConfig = {
   otcEnabled: false,
   maxHardwareWalletAddresses: 1,
   useHwWalletDaemon: true,
-  urlForHwWalletVersionChecking: 'https://version.laqpay.net/laqwallet/version.txt',
-  hwWalletDownloadUrlAndPrefix: 'https://downloads.laqpay.net/laqwallet/laqwallet-firmware-v',
+  urlForHwWalletVersionChecking: 'https://version.laqpay.com/laqwallet/version.txt',
+  hwWalletDownloadUrlAndPrefix: 'https://downloads.laqpay.com/laqwallet/laqwallet-firmware-v',
 
-  urlForVersionChecking: 'https://version.laqpay.net/laqpay/version.txt',
-  walletDownloadUrl: 'https://www.laqpay.net/downloads/',
+  urlForVersionChecking: 'https://version.laqpay.com/laqpay/version.txt',
+  walletDownloadUrl: 'https://www.laqpay.com/downloads/',
 
   /**
    * This wallet uses the Laqpay URI Specification (based on BIP-21) when creating QR codes and

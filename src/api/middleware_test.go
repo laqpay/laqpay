@@ -223,7 +223,7 @@ func TestContentSecurityPolicy(t *testing.T) {
 			endpoint:  "/",
 			enableCSP: true,
 			appLoc:    "../gui/static/dist",
-			expectCSPHeader: "default-src 'self'; connect-src 'self' https://api.coinpaprika.com https://swaplab.cc https://version.laqpay.net https://downloads.laqpay.net http://127.0.0.1:9510; img-src 'self' 'unsafe-inline' data:; style-src 'self' 'unsafe-inline'; object-src	'none'; form-action 'none'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'",
+			expectCSPHeader: "default-src 'self'; connect-src 'self' https://api.coinpaprika.com https://swaplab.cc https://version.laqpay.com https://downloads.laqpay.com http://127.0.0.1:9510; img-src 'self' 'unsafe-inline' data:; style-src 'self' 'unsafe-inline'; object-src	'none'; form-action 'none'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'",
 			enableGUI: true,
 		},
 		{

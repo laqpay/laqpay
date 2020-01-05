@@ -2213,7 +2213,7 @@ $ laqpay-cli status
             "coin_hours_display_name": "Coin Hours",
             "coin_hours_display_name_singular": "Coin Hour",
             "coin_hours_ticker": "SCH",
-            "explorer_url": "https://explorer.laqpay.net"
+            "explorer_url": "https://explorer.laqpay.com"
         }
     },
     "cli_config": {

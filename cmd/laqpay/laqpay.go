@@ -64,7 +64,7 @@ var (
 		BlockchainPubkeyStr: BlockchainPubkeyStr,
 		BlockchainSeckeyStr: BlockchainSeckeyStr,
 		DefaultConnections:  DefaultConnections,
-		PeerListURL:         "https://downloads.laqpay.net/blockchain/peers.txt",
+		PeerListURL:         "https://downloads.laqpay.com/blockchain/peers.txt",
 		Port:                6000,
 		WebInterfacePort:    6420,
 		DataDirectory:       "$HOME/.laqpay",
@@ -82,7 +82,7 @@ var (
 		CoinHoursName:         "Coin Hours",
 		CoinHoursNameSingular: "Coin Hour",
 		CoinHoursTicker:       "SCH",
-		ExplorerURL:           "https://explorer.laqpay.net",
+		ExplorerURL:           "https://explorer.laqpay.com",
 		Bip44Coin:             8000,
 	})
 

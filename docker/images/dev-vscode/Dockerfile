@@ -9,7 +9,7 @@ ARG VS_EXTENSIONS
 LABEL "org.label-schema.name"="laqpaydev-cli" \
       "org.label-schema.description"="Docker image with go, node, dev tools and Visual Studio Code for Laqpay developers" \
       "org.label-schema.vendor"="Laqpay project" \
-      "org.label-schema.url"="laqpay.net" \
+      "org.label-schema.url"="laqpay.com" \
       "org.label-schema.version"="1.0.0-rc.1" \
       "org.label-schema.schema-version"="1.0" \
       "org.label-schema.build-date"=$BDATE \
