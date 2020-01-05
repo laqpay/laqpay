@@ -41,7 +41,7 @@ var (
 	// GenesisAddressStr genesis address string
 	GenesisAddressStr = "zQ5Y7eZ5CJj749Ltj9MQsHyUx4NQtMWfYh"
 	// BlockchainPubkeyStr pubic key string
-	BlockchainPubkeyStr = "022696ad3d8bd010e6cfdb7fede6cdf5b63a7b0ba5f861abce99642f7c8bf2cac0"
+	BlockchainPubkeyStr = "033f59f8cc6cec5d30613d4b7d2ef28e478dd74b6879661447f1cdb8649749f8c0"
 	// BlockchainSeckeyStr empty private key string
 	BlockchainSeckeyStr = ""
 

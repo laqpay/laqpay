@@ -437,8 +437,8 @@ func VerifyAddressSignedHash(address Address, sig Sig, hash SHA256) error {
 // VerifyPubKeySignedHash verifies that hash was signed by PubKey
 func VerifyPubKeySignedHash(pubkey PubKey, sig Sig, hash SHA256) error {
 	pubkeyRec, err := PubKeyFromSig(sig, hash) // recovered pubkey
-	fmt.Println(pubkeyRec.Hex())
-	return nil
+//	fmt.Println(pubkeyRec.Hex())
+//	return nil
 	if err != nil {
 		return ErrInvalidSigPubKeyRecovery
 	}
