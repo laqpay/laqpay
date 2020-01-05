@@ -15,7 +15,7 @@ import (
 )
 
 const (
-	blockchainPubkey = "033f59f8cc6cec5d30613d4b7d2ef28e478dd74b6879661447f1cdb8649749f8c0"
+	blockchainPubkey = "03de90898df039c28c984a29823537491e1aa0dd61f21ecd18d983c9f5f5244afa"
 )
 
 // wrapDB calls dbutil.WrapDB and disables all logging

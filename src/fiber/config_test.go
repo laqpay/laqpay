@@ -14,11 +14,11 @@ func TestNewConfig(t *testing.T) {
 	require.NoError(t, err)
 	require.Equal(t, Config{
 		Node: NodeConfig{
-			GenesisSignatureStr: "571d33433aeb76327f70abc32ab4ef132e01fd1f86f8ce3946765a0c2acc82a1171440c82d42a9b48dec3348776f9b3ec9e497e4b4afe81d3bc04cee6c357cad01",
-			GenesisAddressStr:   "zQ5Y7eZ5CJj749Ltj9MQsHyUx4NQtMWfYh",
-			BlockchainPubkeyStr: "033f59f8cc6cec5d30613d4b7d2ef28e478dd74b6879661447f1cdb8649749f8c0",
+			GenesisSignatureStr: "db00864790c5ebfd7c702f8305ae4eff499282ae7177f2a06b5ee6bc65ad3ca8735f3db3636eed4e40fe9bc3ebace6850d08abe59e27c95e885d0a0c330c9c7200",
+			GenesisAddressStr:   "7x7oZJhvR6n9QP7hsZCrtAVP7Apg42TGm4",
+			BlockchainPubkeyStr: "03de90898df039c28c984a29823537491e1aa0dd61f21ecd18d983c9f5f5244afa",
 			BlockchainSeckeyStr: "",
-			GenesisTimestamp:    1578207105,
+			GenesisTimestamp:    1578231479,
 			GenesisCoinVolume:   100e12,
 			DefaultConnections: []string{
 				"138.201.196.174:6000",

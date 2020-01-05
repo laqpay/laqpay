@@ -30,7 +30,7 @@ import (
 )
 
 const (
-	blockchainPubkeyStr = "033f59f8cc6cec5d30613d4b7d2ef28e478dd74b6879661447f1cdb8649749f8c0"
+	blockchainPubkeyStr = "03de90898df039c28c984a29823537491e1aa0dd61f21ecd18d983c9f5f5244afa"
 )
 
 func prepareDB(t *testing.T) (*dbutil.DB, func()) {
@@ -227,7 +227,7 @@ func TestHistorydbVerifier(t *testing.T) {
 		},
 	}
 
-	pubKeyStr := "033f59f8cc6cec5d30613d4b7d2ef28e478dd74b6879661447f1cdb8649749f8c0"
+	pubKeyStr := "03de90898df039c28c984a29823537491e1aa0dd61f21ecd18d983c9f5f5244afa"
 	pubkey := cipher.MustPubKeyFromHex(pubKeyStr)
 	history := historydb.New()
 
