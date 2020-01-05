@@ -227,7 +227,7 @@ func TestHistorydbVerifier(t *testing.T) {
 		},
 	}
 
-	pubKeyStr := "0328c576d3f420e7682058a981173a4b374c7cc5ff55bf394d3cf57059bbe6456a"
+	pubKeyStr := "022696ad3d8bd010e6cfdb7fede6cdf5b63a7b0ba5f861abce99642f7c8bf2cac0"
 	pubkey := cipher.MustPubKeyFromHex(pubKeyStr)
 	history := historydb.New()
 
