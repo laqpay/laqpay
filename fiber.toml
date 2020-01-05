@@ -8,7 +8,7 @@ blockchain_pubkey_str = "022696ad3d8bd010e6cfdb7fede6cdf5b63a7b0ba5f861abce99642
 blockchain_seckey_str = ""
 genesis_timestamp = 1578207105
 default_connections = [
-    "127.0.0.1:20100"
+    "138.201.196.174:20100",
 ]
 peer_list_url = "https://downloads.laqpay.net/blockchain/peers.txt"
 

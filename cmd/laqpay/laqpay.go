@@ -52,7 +52,7 @@ var (
 
 	// DefaultConnections the default trust node addresses
 	DefaultConnections = []string{
-		"127.0.0.1:20100"
+		"138.201.196.174:20100",
 	}
 
 	nodeConfig = laqpay.NewNodeConfig(ConfigMode, fiber.NodeConfig{
