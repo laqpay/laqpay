@@ -16,9 +16,9 @@ func versionCmd() *cobra.Command {
 		RunE: func(c *cobra.Command, _ []string) error {
 			var ver = struct {
 				Laqpay string `json:"laqpay"`
-				Cli     string `json:"cli"`
-				RPC     string `json:"rpc"`
-				Wallet  string `json:"wallet"`
+				Cli    string `json:"cli"`
+				RPC    string `json:"rpc"`
+				Wallet string `json:"wallet"`
 			}{
 				Version,
 				Version,

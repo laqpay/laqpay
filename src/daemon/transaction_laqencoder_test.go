@@ -14,6 +14,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/laqpay/encodertest"
+
 	"github.com/laqpay/laqpay/src/cipher/encoder"
 	"github.com/laqpay/laqpay/src/coin"
 )

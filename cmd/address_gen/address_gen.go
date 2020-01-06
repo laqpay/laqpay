@@ -21,8 +21,8 @@ import (
 var (
 	// HideSeckey whether need hide secret key
 	HideSeckey = false
-	seed     = ""
-	genCount = 1
+	seed       = ""
+	genCount   = 1
 )
 
 func registerFlags() {

@@ -2606,9 +2606,9 @@ func TestVersion(t *testing.T) {
 
 	var ver = struct {
 		Laqpay string `json:"laqpay"`
-		Cli     string `json:"cli"`
-		RPC     string `json:"rpc"`
-		Wallet  string `json:"wallet"`
+		Cli    string `json:"cli"`
+		RPC    string `json:"rpc"`
+		Wallet string `json:"wallet"`
 	}{}
 	err = json.NewDecoder(bytes.NewReader(output)).Decode(&ver)
 	require.NoError(t, err)
