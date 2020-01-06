@@ -77,11 +77,11 @@ var (
 		CreateBlockMaxDropletPrecision: 3,
 		MaxBlockTransactionsSize:       32768,
 
-		DisplayName:           "Laqpay",
+		DisplayName:           "LAQ",
 		Ticker:                "LAQ",
-		CoinHoursName:         "Coin Hours",
-		CoinHoursNameSingular: "Coin Hour",
-		CoinHoursTicker:       "SCH",
+		CoinHoursName:         "LAQH",
+		CoinHoursNameSingular: "LAQH",
+		CoinHoursTicker:       "LAQH",
 		ExplorerURL:           "https://explorer.laqpay.com",
 		Bip44Coin:             8000,
 	})

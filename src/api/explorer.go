@@ -22,7 +22,7 @@ type CoinSupply struct {
 	MaxSupply string `json:"max_supply"`
 	// CurrentCoinHourSupply is coins hours in non distribution addresses
 	CurrentCoinHourSupply string `json:"current_coinhour_supply"`
-	// TotalCoinHourSupply is coin hours in all addresses including unlocked distribution addresses
+	// TotalCoinHourSupply is LAQH in all addresses including unlocked distribution addresses
 	TotalCoinHourSupply string `json:"total_coinhour_supply"`
 	// Distribution addresses which count towards total supply
 	UnlockedAddresses []string `json:"unlocked_distribution_addresses"`
@@ -116,14 +116,14 @@ func coinSupplyHandler(gateway Gatewayer) http.HandlerFunc {
 				var err error
 				totalCoinHours, err = mathutil.AddUint64(totalCoinHours, out.CalculatedHours)
 				if err != nil {
-					err = fmt.Errorf("uint64 overflow while adding up total coin hours: %v", err)
+					err = fmt.Errorf("uint64 overflow while adding up total LAQH: %v", err)
 					wh.Error500(w, err.Error())
 					return
 				}
 			}
 		}
 
-		// get current coin hours which excludes all distribution addresses
+		// get current LAQH which excludes all distribution addresses
 		var currentCoinHours uint64
 		for _, out := range allUnspents.Confirmed {
 			// check if address not in locked distribution addresses

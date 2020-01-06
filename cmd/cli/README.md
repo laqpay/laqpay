@@ -2207,12 +2207,12 @@ $ laqpay-cli status
         },
         "started_at": 1558864387,
         "fiber": {
-            "name": "laqpay",
-            "display_name": "Laqpay",
+            "name": "LAQ",
+            "display_name": "LAQ",
             "ticker": "LAQ",
-            "coin_hours_display_name": "Coin Hours",
-            "coin_hours_display_name_singular": "Coin Hour",
-            "coin_hours_ticker": "SCH",
+            "coin_hours_display_name": "LAQH",
+            "coin_hours_display_name_singular": "LAQH",
+            "coin_hours_ticker": "LAQH",
             "explorer_url": "https://explorer.laqpay.com"
         }
     },

@@ -989,9 +989,9 @@ func TestGetWalletSeedEnabledAPI(t *testing.T) {
 }
 
 // prepareAndCheckWallet gets wallet from environment, and confirms:
-// 1. The minimal coins and coin hours requirements are met.
+// 1. The minimal coins and LAQH requirements are met.
 // 2. The wallet has at least two address entry.
-// Returns the loaded wallet, total coins, total coin hours and password of the wallet.
+// Returns the loaded wallet, total coins, total LAQH and password of the wallet.
 func prepareAndCheckWallet(t *testing.T, c *api.Client, minCoins, minCoinHours uint64) (wallet.Wallet, uint64, uint64, string) {
 	walletDir, walletName, password := getWalletFromEnv(t, c)
 	walletPath := filepath.Join(walletDir, walletName)
@@ -1029,7 +1029,7 @@ func prepareAndCheckWallet(t *testing.T, c *api.Client, minCoins, minCoinHours u
 	}
 
 	if hours < minCoinHours {
-		t.Fatalf("Wallet must have at least %d coin hours", minCoinHours)
+		t.Fatalf("Wallet must have at least %d LAQH", minCoinHours)
 	}
 
 	if err := wallet.Save(w, walletDir); err != nil {

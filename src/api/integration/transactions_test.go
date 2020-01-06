@@ -515,10 +515,10 @@ func TestLiveInjectTransactionEnableNetworking(t *testing.T) {
 			err:  "400 Bad Request - Transaction violates hard constraint: Transactions may not destroy coins",
 		},
 		{
-			name: "insufficient coin hours",
+			name: "insufficient LAQH",
 			createTxn: func(t *testing.T) *coin.Transaction {
 				txn, txnRsp := prepareTxnFunc(t, w.GetEntryAt(0).Address.String(), totalCoins, "1")
-				// Make up more output coin hours
+				// Make up more output LAQH
 				txn.Out[0].Hours = txn.Out[0].Hours + 1e6
 				// Recalculate inner hash
 				txn.InnerHash = txn.HashInner()
@@ -527,7 +527,7 @@ func TestLiveInjectTransactionEnableNetworking(t *testing.T) {
 				return &txn
 			},
 			code: http.StatusBadRequest,
-			err:  "400 Bad Request - Transaction violates hard constraint: Insufficient coin hours",
+			err:  "400 Bad Request - Transaction violates hard constraint: Insufficient LAQH",
 		},
 		{
 			name: "invalid amount, too many decimal places",
@@ -2162,7 +2162,7 @@ func getTransaction(t *testing.T, c *api.Client, txid string) *readable.Transact
 }
 
 // getAddressBalance gets balance of given address.
-// Returns coins and coin hours.
+// Returns coins and LAQH.
 func getAddressBalance(t *testing.T, c *api.Client, addr string) (uint64, uint64) { //nolint:unparam
 	bp, err := c.Balance([]string{addr})
 	if err != nil {

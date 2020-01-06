@@ -247,12 +247,12 @@ Response:
     },
     "started_at": 1542443907,
     "fiber": {
-        "name": "laqpay",
-        "display_name": "Laqpay",
+        "name": "LAQ",
+        "display_name": "LAQ",
         "ticker": "LAQ",
-        "coin_hours_display_name": "Coin Hours",
-        "coin_hours_display_name_singular": "Coin Hour",
-        "coin_hours_ticker": "SCH",
+        "coin_hours_display_name": "LAQH",
+        "coin_hours_display_name_singular": "LAQH",
+        "coin_hours_ticker": "LAQH",
         "explorer_url": "https://explorer.laqpay.com",
         "bip44_coin": 8000
     }
@@ -1340,12 +1340,12 @@ For the `"share"` mode, `share_factor` must also be set. This must be a decimal 
 In the auto share mode, the remaining hours after the fee are shared between the destination addresses as a whole,
 and the change address. Amongst the destination addresses, the shared hours are distributed proportionally.
 
-When using the `auto` `"share"` `mode`, if there are remaining coin hours as change,
-but no coins are available as change from the wallet (which are needed to retain the coin hours as change),
-the `share_factor` will switch to `1.0` so that extra coin hours are distributed to the outputs
+When using the `auto` `"share"` `mode`, if there are remaining LAQH as change,
+but no coins are available as change from the wallet (which are needed to retain the LAQH as change),
+the `share_factor` will switch to `1.0` so that extra LAQH are distributed to the outputs
 instead of being burned as an additional fee.
-For the `manual` mode, if there are leftover coin hours but no coins to make change with,
-the leftover coin hours will be burned in addition to the required fee.
+For the `manual` mode, if there are leftover LAQH but no coins to make change with,
+the leftover LAQH will be burned in addition to the required fee.
 
 All objects in `to` must be unique; a single transaction cannot create multiple outputs with the same `address`, `coins` and `hours`.
 
@@ -1934,7 +1934,7 @@ Args:
 If verbose, the transaction inputs include the owner address, coins, hours and calculated hours.
 The hours are the original hours the output was created with.
 The calculated hours are calculated based upon the current system time, and provide an approximate
-coin hour value of the output if it were to be confirmed at that instant.
+LAQH value of the output if it were to be confirmed at that instant.
 
 Example:
 

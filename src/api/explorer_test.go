@@ -66,7 +66,7 @@ func makeSuccessCoinSupplyResult(t *testing.T, allUnspents readable.UnspentOutpu
 		}
 	}
 
-	// get current coin hours which excludes all distribution addresses
+	// get current LAQH which excludes all distribution addresses
 	var currentCoinHours uint64
 	for _, out := range allUnspents.HeadOutputs {
 		// check if address not in locked distribution addresses

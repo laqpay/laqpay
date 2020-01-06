@@ -755,7 +755,7 @@ func TestCreateTransaction(t *testing.T) {
 		},
 
 		{
-			name:                        "400 - insufficient coin hours",
+			name:                        "400 - insufficient LAQH",
 			method:                      http.MethodPost,
 			body:                        validBody,
 			status:                      http.StatusBadRequest,
@@ -1672,7 +1672,7 @@ func TestWalletCreateTransaction(t *testing.T) {
 		},
 
 		{
-			name:                        "400 - insufficient coin hours",
+			name:                        "400 - insufficient LAQH",
 			method:                      http.MethodPost,
 			body:                        validBody,
 			status:                      http.StatusBadRequest,

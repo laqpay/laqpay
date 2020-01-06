@@ -66,7 +66,7 @@ type NodeConfig struct {
 	CoinHoursName string `mapstructure:"coin_hours_display_name"`
 	// CoinHoursNameSingular is the singular form of the name of the coinhour asset type, e.g. Coin Hour
 	CoinHoursNameSingular string `mapstructure:"coin_hours_display_name_singular"`
-	// CoinHoursTicker is the name of the coinhour asset type's price ticker, e.g. SCH (Laqpay Coin Hours)
+	// CoinHoursTicker is the name of the coinhour asset type's price ticker, e.g. LAQH (LAQ Hours)
 	CoinHoursTicker string `mapstructure:"coin_hours_ticker"`
 	// ExplorerURL is the URL of the public explorer
 	ExplorerURL string `mapstructure:"explorer_url"`
@@ -151,11 +151,11 @@ func setDefaults() {
 	viper.SetDefault("node.create_block_max_transaction_size", 32*1024)
 	viper.SetDefault("node.create_block_max_decimals", 3)
 	viper.SetDefault("node.max_block_transactions_size", 32*1024)
-	viper.SetDefault("node.display_name", "Laqpay")
+	viper.SetDefault("node.display_name", "LAQ")
 	viper.SetDefault("node.ticker", "LAQ")
-	viper.SetDefault("node.coin_hours_display_name", "Coin Hours")
-	viper.SetDefault("node.coin_hours_display_name_singular", "Coin Hour")
-	viper.SetDefault("node.coin_hours_ticker", "SCH")
+	viper.SetDefault("node.coin_hours_display_name", "LAQH")
+	viper.SetDefault("node.coin_hours_display_name_singular", "LAQH")
+	viper.SetDefault("node.coin_hours_ticker", "LAQH")
 	viper.SetDefault("node.explorer_url", "https://explorer.laqpay.com")
 	viper.SetDefault("node.bip44_coin", bip44.CoinTypeLaqpay)
 
