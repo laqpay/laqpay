@@ -64,7 +64,7 @@ var (
 		BlockchainPubkeyStr: BlockchainPubkeyStr,
 		BlockchainSeckeyStr: BlockchainSeckeyStr,
 		DefaultConnections:  DefaultConnections,
-		PeerListURL:         "https://downloads.laqpay.com/blockchain/peers.txt",
+		PeerListURL:         "https://api.laqpay.com/network/peers",
 		Port:                6000,
 		WebInterfacePort:    6420,
 		DataDirectory:       "$HOME/.laqpay",
