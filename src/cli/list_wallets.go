@@ -7,7 +7,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/wallet"
 )
 
 // WalletEntry represents an enty in a wallet file

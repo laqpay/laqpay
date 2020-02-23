@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher/encrypt"
+	"../../src/cipher/encrypt"
 )
 
 type cryptor interface {

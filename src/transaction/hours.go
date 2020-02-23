@@ -4,9 +4,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/fee"
-	"github.com/laqpay/laqpay/src/util/mathutil"
+	"../../src/params"
+	"../../src/util/fee"
+	"../../src/util/mathutil"
 )
 
 // DistributeSpendHours calculates how many coin hours to transfer to the change address and how

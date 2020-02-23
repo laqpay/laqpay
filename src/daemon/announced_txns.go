@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/laqpay/laqpay/src/cipher"
+	"../../src/cipher"
 )
 
 type announcedTxnsCache struct {

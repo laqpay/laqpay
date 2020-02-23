@@ -18,12 +18,12 @@ import (
 	"github.com/NYTimes/gziphandler"
 	"github.com/rs/cors"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/readable"
-	"github.com/laqpay/laqpay/src/util/file"
-	wh "github.com/laqpay/laqpay/src/util/http"
-	"github.com/laqpay/laqpay/src/util/logging"
-	"github.com/laqpay/laqpay/src/util/useragent"
+	"../../src/cipher"
+	"../../src/readable"
+	"../../src/util/file"
+	wh "../../src/util/http"
+	"../../src/util/logging"
+	"../../src/util/useragent"
 )
 
 var (

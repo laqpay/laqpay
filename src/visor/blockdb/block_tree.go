@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../../src/cipher"
+	"../../../src/coin"
+	"../../../src/visor/dbutil"
 )
 
 var (

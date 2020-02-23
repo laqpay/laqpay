@@ -7,13 +7,13 @@ package consensus
 import (
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher"
+	"../../src/cipher"
 )
 
 ////////////////////////////////////////////////////////////////////////////////
 //
 // Struct ConsensusParticipant is inteneded to extend (or be contained in)
-// github.com/laqpay/laqpay/src/mesh*/node struct Node, so that
+// ../../src/mesh*/node struct Node, so that
 // Node can participate in consensus.
 //
 ////////////////////////////////////////////////////////////////////////////////

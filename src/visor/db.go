@@ -14,13 +14,13 @@ import (
 
 	"github.com/boltdb/bolt"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/encoder"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/util/elapse"
-	"github.com/laqpay/laqpay/src/visor/blockdb"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
-	"github.com/laqpay/laqpay/src/visor/historydb"
+	"../../src/cipher"
+	"../../src/cipher/encoder"
+	"../../src/coin"
+	"../../src/util/elapse"
+	"../../src/visor/blockdb"
+	"../../src/visor/dbutil"
+	"../../src/visor/historydb"
 )
 
 var (

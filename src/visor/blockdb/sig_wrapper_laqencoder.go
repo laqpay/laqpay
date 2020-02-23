@@ -2,7 +2,7 @@
 
 package blockdb
 
-import "github.com/laqpay/laqpay/src/cipher/encoder"
+import "../../../src/cipher/encoder"
 
 // encodeSizeSigWrapper computes the size of an encoded object of type sigWrapper
 func encodeSizeSigWrapper(obj *sigWrapper) uint64 {

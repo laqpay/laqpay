@@ -5,8 +5,8 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
+	"../../src/cipher"
+	"../../src/coin"
 )
 
 // Error wraps transaction creation-related errors.

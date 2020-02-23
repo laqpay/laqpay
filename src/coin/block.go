@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/laqpay/laqpay/src/cipher"
+	"../../src/cipher"
 )
 
 //go:generate laqencoder -struct BlockHeader -unexported

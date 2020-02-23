@@ -8,10 +8,10 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/bip32"
-	"github.com/laqpay/laqpay/src/util/file"
-	"github.com/laqpay/laqpay/src/util/mathutil"
+	"../../src/cipher"
+	"../../src/cipher/bip32"
+	"../../src/util/file"
+	"../../src/util/mathutil"
 )
 
 // XPubWallet holds a single xpub (extended public key) and derives child public keys from it.

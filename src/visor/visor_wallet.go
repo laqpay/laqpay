@@ -5,13 +5,13 @@ package visor
 import (
 	"errors"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/transaction"
-	"github.com/laqpay/laqpay/src/util/mathutil"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/transaction"
+	"../../src/util/mathutil"
+	"../../src/visor/dbutil"
+	"../../src/wallet"
 )
 
 // UserError wraps user input-related errors.

@@ -24,8 +24,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/laqpay/laqpay/src/cipher/ripemd160"
-	secp256k1 "github.com/laqpay/laqpay/src/cipher/secp256k1-go"
+	"../../src/cipher/ripemd160"
+	secp256k1 "../../src/cipher/secp256k1-go"
 )
 
 var (
@@ -437,11 +437,11 @@ func VerifyAddressSignedHash(address Address, sig Sig, hash SHA256) error {
 // VerifyPubKeySignedHash verifies that hash was signed by PubKey
 func VerifyPubKeySignedHash(pubkey PubKey, sig Sig, hash SHA256) error {
 	pubkeyRec, err := PubKeyFromSig(sig, hash) // recovered pubkey
-	//	fmt.Println(pubkeyRec.Hex())
-	//	return nil
 	if err != nil {
 		return ErrInvalidSigPubKeyRecovery
 	}
+//	fmt.Println("pubkey: " + pubkey.Hex())
+//	fmt.Println("pubkeyRec: " + pubkeyRec.Hex())
 	if pubkeyRec != pubkey {
 		return ErrPubKeyRecoverMismatch
 	}

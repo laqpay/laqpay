@@ -3,7 +3,7 @@ package base58fuzz
 import (
 	"bytes"
 
-	"github.com/laqpay/laqpay/src/cipher/base58"
+	"../../../../src/cipher/base58"
 )
 
 // To use the fuzzer:

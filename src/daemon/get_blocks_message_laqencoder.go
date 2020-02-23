@@ -2,7 +2,7 @@
 
 package daemon
 
-import "github.com/laqpay/laqpay/src/cipher/encoder"
+import "../../src/cipher/encoder"
 
 // encodeSizeGetBlocksMessage computes the size of an encoded object of type GetBlocksMessage
 func encodeSizeGetBlocksMessage(obj *GetBlocksMessage) uint64 {

@@ -9,17 +9,17 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/transaction"
-	"github.com/laqpay/laqpay/src/util/droplet"
-	"github.com/laqpay/laqpay/src/util/fee"
-	wh "github.com/laqpay/laqpay/src/util/http"
-	"github.com/laqpay/laqpay/src/util/mathutil"
-	"github.com/laqpay/laqpay/src/visor"
-	"github.com/laqpay/laqpay/src/visor/blockdb"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/transaction"
+	"../../src/util/droplet"
+	"../../src/util/fee"
+	wh "../../src/util/http"
+	"../../src/util/mathutil"
+	"../../src/visor"
+	"../../src/visor/blockdb"
+	"../../src/wallet"
 )
 
 // CreateTransactionResponse is returned by /wallet/transaction

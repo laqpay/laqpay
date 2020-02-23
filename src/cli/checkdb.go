@@ -8,14 +8,14 @@ import (
 	"github.com/boltdb/bolt"
 	"github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/util/apputil"
-	"github.com/laqpay/laqpay/src/visor"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../src/cipher"
+	"../../src/util/apputil"
+	"../../src/visor"
+	"../../src/visor/dbutil"
 )
 
 const (
-	blockchainPubkey = "03de90898df039c28c984a29823537491e1aa0dd61f21ecd18d983c9f5f5244afa"
+	blockchainPubkey = "0341ba8589b51981f0c9c16b51709def29979b5a81d4d6fb59c8f17c5303655fb4"
 )
 
 // wrapDB calls dbutil.WrapDB and disables all logging

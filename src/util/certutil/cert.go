@@ -21,7 +21,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../../src/util/logging"
 )
 
 var logger = logging.MustGetLogger("certutil")

@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/util/droplet"
-	"github.com/laqpay/laqpay/src/util/logging"
-	"github.com/laqpay/laqpay/src/util/timeutil"
-	"github.com/laqpay/laqpay/src/visor"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/util/droplet"
+	"../../src/util/logging"
+	"../../src/util/timeutil"
+	"../../src/visor"
 )
 
 var logger = logging.MustGetLogger("readable")

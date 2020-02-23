@@ -1,6 +1,6 @@
 package readable
 
-import "github.com/laqpay/laqpay/src/cipher/bip44"
+import "../../src/cipher/bip44"
 
 // FiberConfig is fiber configuration parameters
 type FiberConfig struct {

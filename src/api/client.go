@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/daemon"
-	"github.com/laqpay/laqpay/src/kvstorage"
-	"github.com/laqpay/laqpay/src/readable"
+	"../../src/coin"
+	"../../src/daemon"
+	"../../src/kvstorage"
+	"../../src/readable"
 )
 
 const (

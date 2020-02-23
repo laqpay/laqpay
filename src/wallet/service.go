@@ -7,8 +7,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/bip44"
+	"../../src/cipher"
+	"../../src/cipher/bip44"
 )
 
 // TransactionsFinder interface for finding address related transaction hashes

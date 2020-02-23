@@ -4,7 +4,7 @@
 // 20161025 - Code revision by user johnstuartmill.
 package consensus
 
-//"github.com/laqpay/laqpay/src/cipher"
+//"../../src/cipher"
 
 ////////////////////////////////////////////////////////////////////////////////
 type ConnectionManagerInterface interface {

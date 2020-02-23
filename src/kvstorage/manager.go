@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/laqpay/laqpay/src/util/file"
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../src/util/file"
+	"../../src/util/logging"
 )
 
 // Type is a type of a key-value storage

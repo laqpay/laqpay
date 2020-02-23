@@ -10,13 +10,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/daemon"
-	"github.com/laqpay/laqpay/src/readable"
-	wh "github.com/laqpay/laqpay/src/util/http"
-	"github.com/laqpay/laqpay/src/util/mathutil"
-	"github.com/laqpay/laqpay/src/visor"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/daemon"
+	"../../src/readable"
+	wh "../../src/util/http"
+	"../../src/util/mathutil"
+	"../../src/visor"
 )
 
 // pendingTxnsHandler returns pending (unconfirmed) transactions

@@ -15,10 +15,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/bip39/wordlists"
+	"../../../src/cipher"
+	"../../../src/cipher/bip39/wordlists"
 
-	"github.com/laqpay/laqpay/src/cipher/pbkdf2"
+	"../../../src/cipher/pbkdf2"
 )
 
 var (

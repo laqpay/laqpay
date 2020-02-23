@@ -5,7 +5,7 @@ import (
 
 	"github.com/blang/semver"
 
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../src/visor/dbutil"
 )
 
 var (

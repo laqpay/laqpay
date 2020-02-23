@@ -2,7 +2,7 @@
 
 package historydb
 
-import "github.com/laqpay/laqpay/src/cipher/encoder"
+import "../../../src/cipher/encoder"
 
 // encodeSizeUxOut computes the size of an encoded object of type UxOut
 func encodeSizeUxOut(obj *UxOut) uint64 {

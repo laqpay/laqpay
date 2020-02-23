@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../../src/util/logging"
 )
 
 var (

@@ -8,10 +8,10 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/iputil"
-	"github.com/laqpay/laqpay/src/util/useragent"
+	"../../src/cipher"
+	"../../src/params"
+	"../../src/util/iputil"
+	"../../src/util/useragent"
 )
 
 // ConnectionState connection state in the state machine

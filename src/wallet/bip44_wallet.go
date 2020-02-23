@@ -8,12 +8,12 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/bip32"
-	"github.com/laqpay/laqpay/src/cipher/bip39"
-	"github.com/laqpay/laqpay/src/cipher/bip44"
-	"github.com/laqpay/laqpay/src/util/file"
-	"github.com/laqpay/laqpay/src/util/mathutil"
+	"../../src/cipher"
+	"../../src/cipher/bip32"
+	"../../src/cipher/bip39"
+	"../../src/cipher/bip44"
+	"../../src/util/file"
+	"../../src/util/mathutil"
 )
 
 // Bip44Wallet manages keys using the original Laqpay deterministic

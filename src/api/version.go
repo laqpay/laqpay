@@ -3,8 +3,8 @@ package api
 import (
 	"net/http"
 
-	"github.com/laqpay/laqpay/src/readable"
-	wh "github.com/laqpay/laqpay/src/util/http"
+	"../../src/readable"
+	wh "../../src/util/http"
 )
 
 // versionHandler returns the application version info

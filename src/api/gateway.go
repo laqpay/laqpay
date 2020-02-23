@@ -3,14 +3,14 @@ package api
 import (
 	"time"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/daemon"
-	"github.com/laqpay/laqpay/src/kvstorage"
-	"github.com/laqpay/laqpay/src/transaction"
-	"github.com/laqpay/laqpay/src/visor"
-	"github.com/laqpay/laqpay/src/visor/historydb"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/daemon"
+	"../../src/kvstorage"
+	"../../src/transaction"
+	"../../src/visor"
+	"../../src/visor/historydb"
+	"../../src/wallet"
 )
 
 //go:generate mockery -name Gatewayer -case underscore -inpkg -testonly

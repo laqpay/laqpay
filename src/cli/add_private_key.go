@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher"
+	"../../src/wallet"
 )
 
 func addPrivateKeyCmd() *cobra.Command {
@@ -18,7 +18,7 @@ func addPrivateKeyCmd() *cobra.Command {
 		Long: `Add a private key to wallet.
 
     This method only works on "collection" type wallets.
-    Use "laqpay-cli walletCreate -t collection" to create a "collection" type wallet.
+    Use "laqpay-wallet-cli walletCreate -t collection" to create a "collection" type wallet.
 
     Use caution when using this from your shell. The private key will be recorded
     if your shell's history file, unless you disable the shell history.

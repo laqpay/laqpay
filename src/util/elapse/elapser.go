@@ -6,7 +6,7 @@ package elapse
 import (
 	"time"
 
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../../src/util/logging"
 )
 
 // Elapser measures time elapsed for an operation. It is not thread-safe, use a different elapser per thread.

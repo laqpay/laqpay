@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/laqpay/laqpay/src/cipher"
+	"../../src/cipher"
 )
 
 // VerifyAddressRequest is the request data for POST /api/v2/address/verify

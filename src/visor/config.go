@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/params"
+	"../../src/cipher"
+	"../../src/params"
 )
 
 // Config configuration parameters for the Visor

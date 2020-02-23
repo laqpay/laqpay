@@ -9,7 +9,7 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/laqpay/laqpay/src/cipher/bip44"
+	"../../src/cipher/bip44"
 )
 
 // Config records fiber coin parameters

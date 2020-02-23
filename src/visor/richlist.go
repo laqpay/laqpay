@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"sort"
 
-	"github.com/laqpay/laqpay/src/cipher"
+	"../../src/cipher"
 )
 
 // RichlistBalance holds info an address balance holder

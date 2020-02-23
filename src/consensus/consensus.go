@@ -7,7 +7,7 @@ package consensus
 import (
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher"
+	"../../src/cipher"
 )
 
 ////////////////////////////////////////////////////////////////////////////////

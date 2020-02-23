@@ -7,12 +7,12 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/laqpay/laqpay/src/util/droplet"
+	"../../src/util/droplet"
 
-	"github.com/laqpay/laqpay/src/api"
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/readable"
+	"../../src/api"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/readable"
 
 	"github.com/spf13/cobra"
 )

@@ -1,9 +1,9 @@
 package readable
 
 import (
-	"github.com/laqpay/laqpay/src/daemon"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/useragent"
+	"../../src/daemon"
+	"../../src/params"
+	"../../src/util/useragent"
 )
 
 // Connection a connection's state within the daemon

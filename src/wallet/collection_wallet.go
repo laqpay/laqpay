@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/util/file"
+	"../../src/cipher"
+	"../../src/util/file"
 )
 
 // CollectionWallet manages keys as an arbitrary collection.

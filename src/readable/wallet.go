@@ -1,8 +1,8 @@
 package readable
 
 import (
-	"github.com/laqpay/laqpay/src/cipher/bip44"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher/bip44"
+	"../../src/wallet"
 )
 
 // Balance has coins and hours

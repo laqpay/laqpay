@@ -14,12 +14,12 @@ import (
 	"github.com/shopspring/decimal"
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/fee"
-	"github.com/laqpay/laqpay/src/util/logging"
-	"github.com/laqpay/laqpay/src/util/mathutil"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/util/fee"
+	"../../src/util/logging"
+	"../../src/util/mathutil"
 )
 
 var (

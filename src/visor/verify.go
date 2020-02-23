@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/fee"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/util/fee"
 )
 
 /*

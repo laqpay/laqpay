@@ -1,7 +1,7 @@
 package historydb
 
 import (
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../../src/visor/dbutil"
 )
 
 var (

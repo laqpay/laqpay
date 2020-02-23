@@ -19,16 +19,16 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/logging"
-	"github.com/laqpay/laqpay/src/util/mathutil"
-	"github.com/laqpay/laqpay/src/util/timeutil"
-	"github.com/laqpay/laqpay/src/visor/blockdb"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
-	"github.com/laqpay/laqpay/src/visor/historydb"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/util/logging"
+	"../../src/util/mathutil"
+	"../../src/util/timeutil"
+	"../../src/visor/blockdb"
+	"../../src/visor/dbutil"
+	"../../src/visor/historydb"
+	"../../src/wallet"
 )
 
 var logger = logging.MustGetLogger("visor")
@@ -288,6 +288,11 @@ func (vs *Visor) createBlock(tx *dbutil.Tx, when uint64) (coin.SignedBlock, erro
 
 	// Gather all unconfirmed transactions
 	txns, err := vs.unconfirmed.AllRawTransactions(tx)
+
+	if len(txns) == 0 {
+		return coin.SignedBlock{}, errors.New("No transactions")
+	}
+
 	if err != nil {
 		return coin.SignedBlock{}, err
 	}
@@ -366,7 +371,7 @@ func (vs *Visor) createBlockFromTxns(tx *dbutil.Tx, txns coin.Transactions, when
 
 	b, err := vs.blockchain.NewBlock(tx, txns, when)
 	if err != nil {
-		logger.Warningf("blockchain.NewBlock failed: %v", err)
+		//logger.Warningf("blockchain.NewBlock failed: %v", err)
 		return coin.Block{}, err
 	}
 

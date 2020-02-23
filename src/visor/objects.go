@@ -3,8 +3,8 @@ package visor
 import (
 	"time"
 
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/transaction"
+	"../../src/coin"
+	"../../src/transaction"
 )
 
 // Transaction wraps around coin.Transaction, tagged with its status.  This allows us

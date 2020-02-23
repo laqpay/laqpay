@@ -11,7 +11,7 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	logging "github.com/laqpay/laqpay/src/util/logging"
+	logging "../../../src/util/logging"
 )
 
 const (

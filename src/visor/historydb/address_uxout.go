@@ -1,8 +1,8 @@
 package historydb
 
 import (
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../../src/cipher"
+	"../../../src/visor/dbutil"
 )
 
 // AddressUxBkt maps addresses to unspent outputs

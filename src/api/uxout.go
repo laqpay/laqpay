@@ -3,9 +3,9 @@ package api
 import (
 	"net/http"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/readable"
-	wh "github.com/laqpay/laqpay/src/util/http"
+	"../../src/cipher"
+	"../../src/readable"
+	wh "../../src/util/http"
 )
 
 // URI: /api/v1/uxout

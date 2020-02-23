@@ -2,7 +2,7 @@
 
 package coin
 
-import "github.com/laqpay/laqpay/src/cipher/encoder"
+import "../../src/cipher/encoder"
 
 // encodeSizeUxBody computes the size of an encoded object of type UxBody
 func encodeSizeUxBody(obj *UxBody) uint64 {

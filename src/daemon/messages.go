@@ -9,14 +9,14 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/encoder"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/daemon/gnet"
-	"github.com/laqpay/laqpay/src/daemon/pex"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/iputil"
-	"github.com/laqpay/laqpay/src/util/useragent"
+	"../../src/cipher"
+	"../../src/cipher/encoder"
+	"../../src/coin"
+	"../../src/daemon/gnet"
+	"../../src/daemon/pex"
+	"../../src/params"
+	"../../src/util/iputil"
+	"../../src/util/useragent"
 )
 
 // Message represent a packet to be serialized over the network by
@@ -54,8 +54,8 @@ func NewMessageConfig(prefix string, m interface{}) MessageConfig {
 //go:generate laqencoder -unexported -struct AnnounceTxnsMessage
 //go:generate laqencoder -unexported -struct DisconnectMessage
 //go:generate laqencoder -unexported -struct IPAddr
-//go:generate laqencoder -unexported -output-path . -package daemon -struct SignedBlock github.com/laqpay/laqpay/src/coin
-//go:generate laqencoder -unexported -output-path . -package daemon -struct Transaction github.com/laqpay/laqpay/src/coin
+//go:generate laqencoder -unexported -output-path . -package daemon -struct SignedBlock ../../src/coin
+//go:generate laqencoder -unexported -output-path . -package daemon -struct Transaction ../../src/coin
 
 // Creates and populates the message configs
 func getMessageConfigs() []MessageConfig {

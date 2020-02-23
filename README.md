@@ -633,7 +633,7 @@ You can find information about how to work with translation files in the [Transl
 0. If the `master` branch has commits that are not in `develop` (e.g. due to a hotfix applied to `master`), merge `master` into `develop`
 0. Make sure the translations are up to date. See the [i18n README](./src/gui/static/src/assets/i18n/README.md) for instructions on how to update translations and how to check if they are up to date.
 0. Compile the `src/gui/static/dist/` to make sure that it is up to date (see [Wallet GUI Development README](src/gui/static/README.md))
-0. Update version strings to the new version in the following files: `electron/package-lock.json`, `electron/package.json`, `electron/laqpay/current-laqpay.json`, `src/cli/cli.go`, `src/gui/static/src/current-laqpay.json`, `src/cli/integration/testdata/status*.golden`, `template/coin.template`, `README.md` files .
+0. Update version strings to the new version in the following files: `electron/package-lock.json`, `electron/package.json`, `electron/laqpay/current-laqpay.json`, `src/laqpay-wallet-cli/laqpay-wallet-cli.go`, `src/gui/static/src/current-laqpay.json`, `src/cli/integration/testdata/status*.golden`, `template/coin.template`, `README.md` files .
 0. If changes require a new database verification on the next upgrade, update `src/laqpay/laqpay.go`'s `DBVerifyCheckpointVersion` value
 0. Update `CHANGELOG.md`: move the "unreleased" changes to the version and add the date
 0. Update the files in https://github.com/laqpay/repo-info by following the [metadata update procedure](https://github.com/laqpay/repo-info/#updating-laqpay-repository-metadate),
@@ -659,8 +659,8 @@ Performs these actions before releasing:
 * `make integration-test-live-disable-networking` (requires node run with `-disable-networking`)
 * `make integration-test-live-disable-csrf` (requires node run with `-disable-csrf`)
 * `make intergration-test-live-wallet` (see [live integration tests](#live-integration-tests)) 6 times: with an unencrypted and encrypted wallet for each wallet type: `deterministic`, `bip44` and `collection`
-* `go run cmd/cli/cli.go checkdb` against a fully synced database
-* `go run cmd/cli/cli.go checkDBDecoding` against a fully synced database
+* `go run cmd/laqpay-wallet-cli/laqpay-wallet-cli.go checkdb` against a fully synced database
+* `go run cmd/laqpay-wallet-cli/laqpay-wallet-cli.go checkDBDecoding` against a fully synced database
 * On all OSes, make sure that the client runs properly from the command line (`./run-client.sh` and `./run-daemon.sh`)
 * Build the releases and make sure that the Electron client runs properly on Windows, Linux and macOS.
     * Use a clean data directory with no wallets or database to sync from scratch and verify the wallet setup wizard.
@@ -690,10 +690,6 @@ sub   cv25519 2017-09-01 [E] [expires: 2023-03-18]
 ```
 
 Keybase.io account: https://keybase.io/gzc
-
-Follow the [Tor Project's instructions for verifying signatures](https://www.torproject.org/docs/verifying-signatures.html.en).
-
-If you can't or don't want to import the keys from a keyserver, the signing key is available in the repo: [gz-c.asc](gz-c.asc).
 
 Releases and their signatures can be found on the [releases page](https://github.com/laqpay/laqpay/releases).
 

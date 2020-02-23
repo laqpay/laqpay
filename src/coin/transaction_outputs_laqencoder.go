@@ -6,7 +6,7 @@ import (
 	"errors"
 	"math"
 
-	"github.com/laqpay/laqpay/src/cipher/encoder"
+	"../../src/cipher/encoder"
 )
 
 // encodeSizeTransactionOutputs computes the size of an encoded object of type transactionOutputs

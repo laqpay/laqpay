@@ -7,10 +7,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/util/logging"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../../src/cipher"
+	"../../../src/coin"
+	"../../../src/util/logging"
+	"../../../src/visor/dbutil"
 )
 
 var (
@@ -20,8 +20,8 @@ var (
 	ErrNoHeadBlock = fmt.Errorf("found no head block")
 )
 
-//go:generate laqencoder -unexported -struct Block -output-path . -package blockdb github.com/laqpay/laqpay/src/coin
-//go:generate laqencoder -unexported -struct UxOut -output-path . -package blockdb github.com/laqpay/laqpay/src/coin
+//go:generate laqencoder -unexported -struct Block -output-path . -package blockdb ../../../src/coin
+//go:generate laqencoder -unexported -struct UxOut -output-path . -package blockdb ../../../src/coin
 //go:generate laqencoder -unexported -struct hashPairsWrapper
 //go:generate laqencoder -unexported -struct hashesWrapper
 //go:generate laqencoder -unexported -struct sigWrapper

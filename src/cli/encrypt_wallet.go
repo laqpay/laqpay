@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/wallet"
 )
 
 func encryptWalletCmd() *cobra.Command {

@@ -7,9 +7,9 @@ import (
 	"log"
 	"math/big"
 
-	"github.com/laqpay/laqpay/src/cipher/ripemd160"
-	secp256k1 "github.com/laqpay/laqpay/src/cipher/secp256k1-go"
-	secp256k1go "github.com/laqpay/laqpay/src/cipher/secp256k1-go/secp256k1-go2"
+	"../../../src/cipher/ripemd160"
+	secp256k1 "../../../src/cipher/secp256k1-go"
+	secp256k1go "../../../src/cipher/secp256k1-go/secp256k1-go2"
 )
 
 //

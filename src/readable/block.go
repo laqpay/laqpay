@@ -7,8 +7,8 @@ package readable
 import (
 	"errors"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
+	"../../src/cipher"
+	"../../src/coin"
 )
 
 // BlockHeader represents the readable block header

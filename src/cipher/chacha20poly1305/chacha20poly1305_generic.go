@@ -7,8 +7,8 @@ package chacha20poly1305
 import (
 	"encoding/binary"
 
-	"github.com/laqpay/laqpay/src/cipher/chacha20poly1305/internal/chacha20"
-	"github.com/laqpay/laqpay/src/cipher/poly1305"
+	"../../../src/cipher/chacha20poly1305/internal/chacha20"
+	"../../../src/cipher/poly1305"
 )
 
 func roundTo16(n int) int {

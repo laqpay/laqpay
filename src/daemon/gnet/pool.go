@@ -17,10 +17,10 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher/encoder"
-	"github.com/laqpay/laqpay/src/daemon/strand"
-	"github.com/laqpay/laqpay/src/util/elapse"
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../../src/cipher/encoder"
+	"../../../src/daemon/strand"
+	"../../../src/util/elapse"
+	"../../../src/util/logging"
 )
 
 // DisconnectReason is passed to ConnectionPool's DisconnectCallback

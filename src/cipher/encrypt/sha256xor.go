@@ -9,8 +9,8 @@ import (
 	"io"
 	"math"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	secp256k1 "github.com/laqpay/laqpay/src/cipher/secp256k1-go"
+	"../../../src/cipher"
+	secp256k1 "../../../src/cipher/secp256k1-go"
 )
 
 const (

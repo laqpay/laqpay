@@ -7,15 +7,15 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	wh "github.com/laqpay/laqpay/src/util/http"
-	"github.com/laqpay/laqpay/src/util/iputil"
+	"../../src/cipher"
+	wh "../../src/util/http"
+	"../../src/util/iputil"
 )
 
 // ContentSecurityPolicy represents the value of content-security-policy
 // header in http response
 const ContentSecurityPolicy = "default-src 'self'" +
-	"; connect-src 'self' https://api.coinpaprika.com https://swaplab.cc https://version.laqpay.com https://downloads.laqpay.com http://127.0.0.1:9510" +
+	"; connect-src 'self' https://api.coinpaprika.com https://swaplab.cc https://api.laqpay.com https://dl.laqpay.com http://127.0.0.1:9510" +
 	"; img-src 'self' 'unsafe-inline' data:" +
 	"; style-src 'self' 'unsafe-inline'" +
 	"; object-src	'none'" +

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"log"
 
-	"github.com/laqpay/laqpay/src/cipher/base58"
+	"../../src/cipher/base58"
 )
 
 var (

@@ -9,11 +9,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/bip39"
-	"github.com/laqpay/laqpay/src/cipher/bip44"
-	secp256k1 "github.com/laqpay/laqpay/src/cipher/secp256k1-go"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher"
+	"../../src/cipher/bip39"
+	"../../src/cipher/bip44"
+	secp256k1 "../../src/cipher/secp256k1-go"
+	"../../src/wallet"
 )
 
 const (

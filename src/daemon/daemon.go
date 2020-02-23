@@ -15,18 +15,18 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/daemon/gnet"
-	"github.com/laqpay/laqpay/src/daemon/pex"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/elapse"
-	"github.com/laqpay/laqpay/src/util/fee"
-	"github.com/laqpay/laqpay/src/util/iputil"
-	"github.com/laqpay/laqpay/src/util/logging"
-	"github.com/laqpay/laqpay/src/util/useragent"
-	"github.com/laqpay/laqpay/src/visor"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/daemon/gnet"
+	"../../src/daemon/pex"
+	"../../src/params"
+	"../../src/util/elapse"
+	"../../src/util/fee"
+	"../../src/util/iputil"
+	"../../src/util/logging"
+	"../../src/util/useragent"
+	"../../src/visor"
+	"../../src/visor/dbutil"
 )
 
 var (
@@ -233,8 +233,8 @@ type DaemonConfig struct { //nolint:golint
 // NewDaemonConfig creates daemon config
 func NewDaemonConfig() DaemonConfig {
 	return DaemonConfig{
-		ProtocolVersion:              2,
-		MinProtocolVersion:           2,
+		ProtocolVersion:              1,
+		MinProtocolVersion:           1,
 		Address:                      "",
 		Port:                         6677,
 		OutgoingRate:                 time.Second * 5,
@@ -251,7 +251,7 @@ func NewDaemonConfig() DaemonConfig {
 		DisableOutgoingConnections:   false,
 		DisableIncomingConnections:   false,
 		LocalhostOnly:                false,
-		LogPings:                     true,
+		LogPings:                     false,
 		BlocksRequestRate:            time.Second * 60,
 		BlocksAnnounceRate:           time.Second * 60,
 		GetBlocksRequestCount:        20,
@@ -546,7 +546,9 @@ loop:
 
 			m := NewGetPeersMessage()
 			if _, err := dm.broadcastMessage(m); err != nil {
-				logger.WithError(err).Error("Broadcast GetPeersMessage failed")
+				if(err.Error() != "No addresses provided") {
+					logger.WithError(err).Error("Broadcast GetPeersMessage failed")
+				}
 				continue
 			}
 
@@ -627,7 +629,9 @@ loop:
 			if dm.visor.Config.IsBlockPublisher {
 				sb, err := dm.createAndPublishBlock()
 				if err != nil {
-					logger.WithError(err).Error("Failed to create and publish block")
+					if(err.Error() != "No transactions") {
+						logger.WithError(err).Error("Failed to create and publish block")
+					}
 					continue
 				}
 
@@ -668,13 +672,17 @@ loop:
 		case <-blocksRequestTicker.C:
 			elapser.Register("blocksRequestTicker")
 			if err := dm.requestBlocks(); err != nil {
-				logger.WithError(err).Warning("requestBlocks failed")
+				if(err.Error() != "No addresses provided") {
+					logger.WithError(err).Warning("requestBlocks failed")
+				}
 			}
 
 		case <-blocksAnnounceTicker.C:
 			elapser.Register("blocksAnnounceTicker")
 			if err := dm.announceBlocks(); err != nil {
-				logger.WithError(err).Warning("announceBlocks failed")
+				if(err.Error() != "No addresses provided") {
+					logger.WithError(err).Warning("announceBlocks failed")
+				}
 			}
 
 		case setupErr = <-errC:
@@ -796,7 +804,7 @@ func (dm *Daemon) maybeConnectToTrustedPeer() error {
 	}
 
 	if !connected {
-		return errors.New("Could not connect to any trusted peer")
+		//return errors.New("Could not connect to any trusted peer")
 	}
 
 	return nil
@@ -821,7 +829,7 @@ func (dm *Daemon) connectToRandomPeer() {
 	peers := dm.pex.RandomPublic(dm.config.MaxOutgoingConnections - dm.connections.OutgoingLen())
 	for _, p := range peers {
 		if err := dm.connectToPeer(p); err != nil {
-			logger.WithError(err).WithField("addr", p.Addr).Warning("connectToPeer failed")
+			//logger.WithError(err).WithField("addr", p.Addr).Warning("connectToPeer failed")
 		}
 	}
 

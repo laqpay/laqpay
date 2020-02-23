@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/chacha20poly1305"
-	"github.com/laqpay/laqpay/src/cipher/scrypt"
+	"../../../src/cipher"
+	"../../../src/cipher/chacha20poly1305"
+	"../../../src/cipher/scrypt"
 )
 
 const (

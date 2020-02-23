@@ -9,8 +9,8 @@ import (
 	"container/heap"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/secp256k1-go"
+	"../../src/cipher"
+	"../../src/cipher/secp256k1-go"
 )
 
 ////////////////////////////////////////////////////////////////////////////////

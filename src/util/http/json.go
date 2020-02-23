@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/util/droplet"
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../../src/cipher"
+	"../../../src/util/droplet"
+	"../../../src/util/logging"
 )
 
 // SendJSONOr500 writes an object as JSON, writing a 500 error if it fails

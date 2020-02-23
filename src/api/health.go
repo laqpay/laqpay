@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/laqpay/laqpay/src/daemon"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/readable"
-	wh "github.com/laqpay/laqpay/src/util/http"
+	"../../src/daemon"
+	"../../src/params"
+	"../../src/readable"
+	wh "../../src/util/http"
 )
 
 // BlockchainMetadata extends visor.BlockchainMetadata to include the time since the last block

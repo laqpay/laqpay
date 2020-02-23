@@ -1,8 +1,8 @@
 package visor
 
 import (
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
+	"../../src/coin"
+	"../../src/params"
 )
 
 // TransactionIsLocked returns true if the transaction spends locked outputs

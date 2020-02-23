@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/droplet"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/util/droplet"
 )
 
 func distributeGenesisCmd() *cobra.Command {

@@ -6,9 +6,9 @@ import (
 	"errors"
 	"math"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/encoder"
-	"github.com/laqpay/laqpay/src/coin"
+	"../../../src/cipher"
+	"../../../src/cipher/encoder"
+	"../../../src/coin"
 )
 
 // encodeSizeTransaction computes the size of an encoded object of type Transaction

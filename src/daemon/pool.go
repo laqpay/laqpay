@@ -3,7 +3,7 @@ package daemon
 import (
 	"time"
 
-	"github.com/laqpay/laqpay/src/daemon/gnet"
+	"../../src/daemon/gnet"
 )
 
 // PoolConfig pool config

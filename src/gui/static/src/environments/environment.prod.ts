@@ -1,10 +1,10 @@
 export const environment = {
   nodeUrl: '/api/',
   production: true,
-  tellerUrl: 'https://event.laqpay.com/api/',
+  tellerUrl: '/teller/',
 
   swaplab: {
-    apiKey: 'w4bxe2tbf9beb72r', // if set to null, integration will be disabled
+    apiKey: null, // if set to null, integration will be disabled
     activateTestMode: false,
     endStatusInError: false,
   },

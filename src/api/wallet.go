@@ -9,11 +9,11 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/laqpay/laqpay/src/cipher/bip39"
-	"github.com/laqpay/laqpay/src/cipher/bip44"
-	"github.com/laqpay/laqpay/src/readable"
-	wh "github.com/laqpay/laqpay/src/util/http"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher/bip39"
+	"../../src/cipher/bip44"
+	"../../src/readable"
+	wh "../../src/util/http"
+	"../../src/wallet"
 )
 
 // UnconfirmedTxnsResponse contains unconfirmed transaction data

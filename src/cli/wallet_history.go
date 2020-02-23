@@ -10,10 +10,10 @@ import (
 
 	cobra "github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/api"
-	"github.com/laqpay/laqpay/src/readable"
-	"github.com/laqpay/laqpay/src/util/droplet"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/api"
+	"../../src/readable"
+	"../../src/util/droplet"
+	"../../src/wallet"
 )
 
 // AddrHistory represents a transactional event for an address

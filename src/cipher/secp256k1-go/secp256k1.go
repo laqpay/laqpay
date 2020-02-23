@@ -8,7 +8,7 @@ import (
 	"encoding/hex"
 	"log"
 
-	secp "github.com/laqpay/laqpay/src/cipher/secp256k1-go/secp256k1-go2"
+	secp "../../../src/cipher/secp256k1-go/secp256k1-go2"
 )
 
 // DebugPrint enable debug print statements

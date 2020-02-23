@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/laqpay/laqpay/src/util/file"
+	"../../src/util/file"
 )
 
 var (

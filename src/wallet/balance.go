@@ -1,8 +1,8 @@
 package wallet
 
 import (
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/util/mathutil"
+	"../../src/coin"
+	"../../src/util/mathutil"
 )
 
 /*

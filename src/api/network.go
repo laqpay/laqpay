@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/laqpay/laqpay/src/daemon"
-	"github.com/laqpay/laqpay/src/readable"
-	wh "github.com/laqpay/laqpay/src/util/http"
+	"../../src/daemon"
+	"../../src/readable"
+	wh "../../src/util/http"
 )
 
 // connectionHandler returns a specific connection

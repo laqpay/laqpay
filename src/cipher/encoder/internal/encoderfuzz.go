@@ -3,7 +3,7 @@ package encoderfuzz
 import (
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher/encoder"
+	"../../../../src/cipher/encoder"
 )
 
 // To use the fuzzer:

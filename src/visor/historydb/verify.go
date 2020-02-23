@@ -4,9 +4,9 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/encoder"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../../src/cipher"
+	"../../../src/cipher/encoder"
+	"../../../src/visor/dbutil"
 )
 
 var (

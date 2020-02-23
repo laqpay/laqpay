@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/readable"
-	wh "github.com/laqpay/laqpay/src/util/http"
-	"github.com/laqpay/laqpay/src/visor"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/readable"
+	wh "../../src/util/http"
+	"../../src/visor"
 )
 
 // blockchainMetadataHandler returns the blockchain metadata

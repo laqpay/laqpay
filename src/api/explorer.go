@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/readable"
-	"github.com/laqpay/laqpay/src/util/droplet"
-	wh "github.com/laqpay/laqpay/src/util/http"
-	"github.com/laqpay/laqpay/src/util/mathutil"
+	"../../src/cipher"
+	"../../src/readable"
+	"../../src/util/droplet"
+	wh "../../src/util/http"
+	"../../src/util/mathutil"
 )
 
 // CoinSupply records the coin supply info

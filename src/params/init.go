@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/laqpay/laqpay/src/util/droplet"
+	"../../src/util/droplet"
 )
 
 func init() {

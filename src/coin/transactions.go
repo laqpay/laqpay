@@ -9,8 +9,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/util/mathutil"
+	"../../src/cipher"
+	"../../src/util/mathutil"
 )
 
 var (

@@ -10,8 +10,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/util/file"
-	"github.com/laqpay/laqpay/src/util/useragent"
+	"../../../src/util/file"
+	"../../../src/util/useragent"
 )
 
 // Peers peer list

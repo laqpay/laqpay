@@ -16,7 +16,7 @@ used with a fixed key in order to generate one-time keys from an nonce.
 However, in this package AES isn't used and the one-time key is specified
 directly.
 */
-package poly1305 // import "github.com/laqpay/laqpay/src/cipher/poly1305"
+package poly1305 // import "../../../src/cipher/poly1305"
 
 import "crypto/subtle"
 

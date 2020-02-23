@@ -3,7 +3,7 @@ package params
 import (
 	"errors"
 
-	"github.com/laqpay/laqpay/src/cipher"
+	"../../src/cipher"
 )
 
 // Distribution parameters define the initial coin distribution and unlocking schedule

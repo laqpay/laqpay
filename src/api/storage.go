@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/laqpay/laqpay/src/kvstorage"
+	"../../src/kvstorage"
 )
 
 // Dispatches /data endpoint.

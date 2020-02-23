@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/util/logging"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../../src/cipher"
+	"../../../src/coin"
+	"../../../src/util/logging"
+	"../../../src/visor/dbutil"
 )
 
 var logger = logging.MustGetLogger("historydb")

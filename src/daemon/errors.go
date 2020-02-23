@@ -3,7 +3,7 @@ package daemon
 import (
 	"errors"
 
-	"github.com/laqpay/laqpay/src/daemon/gnet"
+	"../../src/daemon/gnet"
 )
 
 var (

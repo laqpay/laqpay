@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/laqpay/laqpay/src/cipher/base58"
+	"../../../src/cipher/base58"
 )
 
 const (

@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/api"
+	"../../src/api"
 )
 
 func richlistCmd() *cobra.Command {

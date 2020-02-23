@@ -21,14 +21,14 @@ import (
 	"github.com/spf13/pflag"
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/laqpay/laqpay/src/api"
-	"github.com/laqpay/laqpay/src/util/file"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/api"
+	"../../src/util/file"
+	"../../src/wallet"
 )
 
 var (
 	// Version is the CLI Version
-	Version = "0.26.0"
+	Version = "0.1.1"
 )
 
 const (

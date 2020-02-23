@@ -10,16 +10,16 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/readable"
-	"github.com/laqpay/laqpay/src/transaction"
-	"github.com/laqpay/laqpay/src/util/droplet"
-	"github.com/laqpay/laqpay/src/util/fee"
-	"github.com/laqpay/laqpay/src/util/mathutil"
-	"github.com/laqpay/laqpay/src/visor"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/readable"
+	"../../src/transaction"
+	"../../src/util/droplet"
+	"../../src/util/fee"
+	"../../src/util/mathutil"
+	"../../src/visor"
+	"../../src/wallet"
 )
 
 var (

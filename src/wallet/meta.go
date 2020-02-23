@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/bip39"
-	"github.com/laqpay/laqpay/src/cipher/bip44"
+	"../../src/cipher"
+	"../../src/cipher/bip39"
+	"../../src/cipher/bip44"
 )
 
 // wallet meta fields

@@ -3,8 +3,8 @@
 package blockdb
 
 import (
-	"github.com/laqpay/laqpay/src/cipher/encoder"
-	"github.com/laqpay/laqpay/src/coin"
+	"../../../src/cipher/encoder"
+	"../../../src/coin"
 )
 
 // encodeSizeUxOut computes the size of an encoded object of type UxOut

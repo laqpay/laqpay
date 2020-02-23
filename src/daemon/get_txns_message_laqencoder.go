@@ -6,8 +6,8 @@ import (
 	"errors"
 	"math"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/encoder"
+	"../../src/cipher"
+	"../../src/cipher/encoder"
 )
 
 // encodeSizeGetTxnsMessage computes the size of an encoded object of type GetTxnsMessage

@@ -1,8 +1,8 @@
 package readable
 
 import (
-	"github.com/laqpay/laqpay/src/util/droplet"
-	"github.com/laqpay/laqpay/src/visor"
+	"../../src/util/droplet"
+	"../../src/visor"
 )
 
 // RichlistBalance holds info an address balance holder

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/visor/dbutil"
 )
 
 var (

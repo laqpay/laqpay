@@ -6,14 +6,14 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/transaction"
-	"github.com/laqpay/laqpay/src/util/droplet"
-	"github.com/laqpay/laqpay/src/util/mathutil"
-	"github.com/laqpay/laqpay/src/visor"
-	"github.com/laqpay/laqpay/src/visor/historydb"
-	"github.com/laqpay/laqpay/src/wallet"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/transaction"
+	"../../src/util/droplet"
+	"../../src/util/mathutil"
+	"../../src/visor"
+	"../../src/visor/historydb"
+	"../../src/wallet"
 )
 
 // UnspentOutput represents a readable output

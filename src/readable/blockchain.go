@@ -1,8 +1,8 @@
 package readable
 
 import (
-	"github.com/laqpay/laqpay/src/daemon"
-	"github.com/laqpay/laqpay/src/visor"
+	"../../src/daemon"
+	"../../src/visor"
 )
 
 // BlockchainMetadata encapsulates useful information from the coin.Blockchain

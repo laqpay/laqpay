@@ -2,7 +2,7 @@
 
 A Laqpay node offers a REST API on port 6420 (when running from source; if you are using the releases downloaded from the website, the port is randomized)
 
-A CLI tool is provided in `cmd/cli/cli.go`. This tool communicates over the REST API.
+A CLI tool is provided in `cmd/laqpay-wallet-cli/laqpay-wallet-cli.go`. This tool communicates over the REST API.
 
 The API interfaces do not support authentication or encryption so they should only be used over localhost.
 
@@ -73,10 +73,6 @@ and to use the CLI tool for wallet operations (seed and address generation, tran
 
 <!-- /MarkdownTOC -->
 
-## Running the laqpay node
-
-For integrations, the laqpay node should be run from source with `./run-daemon.sh`. This requires go1.10+ to be installed.
-
 ## API Documentation
 
 ### Wallet REST API
@@ -115,10 +111,10 @@ Another option is to check the unspent outputs for a list of known deposit addre
 
 #### Using the CLI
 
-To scan the blockchain, use `laqpay-cli lastBlocks` or `laqpay-cli blocks`. These will return block data as JSON
+To scan the blockchain, use `laqpay-wallet-cli lastBlocks` or `laqpay-wallet-cli blocks`. These will return block data as JSON
 and new unspent outputs sent to an address can be detected.
 
-To check address outputs, use `laqpay-cli addressOutputs`. If you only want the balance, you can use `laqpay-cli addressBalance`.
+To check address outputs, use `laqpay-wallet-cli addressOutputs`. If you only want the balance, you can use `laqpay-wallet-cli addressBalance`.
 
 #### Using the REST API
 
@@ -170,9 +166,9 @@ See [CLI command API](cmd/cli/README.md) for documentation of the CLI interface.
 
 To perform a send, the preferred method follows these steps in a loop:
 
-* `laqpay-cli createRawTransaction $WALLET_FILE -m '[{"addr:"$addr1,"coins:"$coins1"}, ...]` - `-m` flag is send-to-many
-* `laqpay-cli broadcastTransaction` - returns `txid`
-* `laqpay-cli transaction $txid` - repeat this command until `"status"` is `"confirmed"`
+* `laqpay-wallet-cli createRawTransaction $WALLET_FILE -m '[{"addr:"$addr1,"coins:"$coins1"}, ...]` - `-m` flag is send-to-many
+* `laqpay-wallet-cli broadcastTransaction` - returns `txid`
+* `laqpay-wallet-cli transaction $txid` - repeat this command until `"status"` is `"confirmed"`
 
 That is, create a raw transaction, broadcast it, and wait for it to confirm.
 
@@ -238,7 +234,7 @@ will then be sent to the change address.
 #### Using the CLI
 
 ```sh
-laqpay-cli verifyAddress $addr
+laqpay-wallet-cli verifyAddress $addr
 ```
 
 #### Using the REST API
@@ -281,12 +277,12 @@ Use the [Laqpay REST API Client](https://godoc.org/github.com/laqpay/laqpay/src/
 #### Using the CLI
 
 ```sh
-laqpay-cli status
+laqpay-wallet-cli status
 ```
 
 #### Using the REST API
 
-A method similar to `laqpay-cli status` is not implemented, but these endpoints can be used:
+A method similar to `laqpay-wallet-cli status` is not implemented, but these endpoints can be used:
 
 * `GET /api/v1/health`
 * `GET /api/v1/version`
@@ -317,7 +313,7 @@ If you already have an xpub key, you can skip to step 3.
 #### Using the CLI
 
 ```sh
-laqpay-cli bip44-wallet.wlt -t bip44
+laqpay-wallet-cli bip44-wallet.wlt -t bip44
 ```
 
 #### Using the REST API
@@ -329,7 +325,7 @@ laqpay-cli bip44-wallet.wlt -t bip44
 #### Using the CLI
 
 ```sh
-laqpay-cli walletKeyExport bip44-wallet.wlt -k xpub --path "0/0"
+laqpay-wallet-cli walletKeyExport bip44-wallet.wlt -k xpub --path "0/0"
 ```
 
 #### Using the REST API
@@ -341,7 +337,7 @@ Not possible
 #### Using the CLI
 
 ```sh
-laqpay-cli walletCreate xpub-wallet.wlt -t xpub --xpub $MY_XPUB_KEY
+laqpay-wallet-cli walletCreate xpub-wallet.wlt -t xpub --xpub $MY_XPUB_KEY
 ```
 
 #### Using the REST API

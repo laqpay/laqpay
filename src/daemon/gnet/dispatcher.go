@@ -10,8 +10,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher/encoder"
-	"github.com/laqpay/laqpay/src/util/mathutil"
+	"../../../src/cipher/encoder"
+	"../../../src/util/mathutil"
 )
 
 var (

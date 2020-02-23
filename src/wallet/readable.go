@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/bip44"
+	"../../src/cipher"
+	"../../src/cipher/bip44"
 )
 
 // ReadableEntry wallet entry with json tags

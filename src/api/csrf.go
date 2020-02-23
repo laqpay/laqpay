@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	wh "github.com/laqpay/laqpay/src/util/http"
+	"../../src/cipher"
+	wh "../../src/util/http"
 )
 
 const (

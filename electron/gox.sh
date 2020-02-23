@@ -49,7 +49,7 @@ COMMIT=`git rev-parse HEAD`
 CLI_IMPORT_PATH=`go list ../src/cli`
 
 gox -osarch="$OSARCH" \
-    -gcflags="-trimpath=${HOME}" \
+#    -gcflags="-trimpath=${HOME}" \
     -asmflags="-trimpath=${HOME}" \
     -ldflags="-X main.Version=${APP_VERSION} -X main.Commit=${COMMIT} -X main.ConfigMode=${CONFIG_MODE} -X ${CLI_IMPORT_PATH}.Version=${APP_VERSION}" \
     -output="${OUTPUT_DIR}{{.Dir}}_{{.OS}}_{{.Arch}}" \

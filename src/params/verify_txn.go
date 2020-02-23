@@ -3,7 +3,7 @@ package params
 import (
 	"errors"
 
-	"github.com/laqpay/laqpay/src/util/droplet"
+	"../../src/util/droplet"
 )
 
 const (

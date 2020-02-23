@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/util/fee"
-	"github.com/laqpay/laqpay/src/visor/blockdb"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
-	"github.com/laqpay/laqpay/src/visor/historydb"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/util/fee"
+	"../../src/visor/blockdb"
+	"../../src/visor/dbutil"
+	"../../src/visor/historydb"
 )
 
 const (

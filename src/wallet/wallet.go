@@ -16,10 +16,10 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/cipher/bip44"
-	"github.com/laqpay/laqpay/src/util/file"
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../src/cipher"
+	"../../src/cipher/bip44"
+	"../../src/util/file"
+	"../../src/util/logging"
 )
 
 // Error wraps wallet-related errors.

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/laqpay/laqpay/src/readable"
-	wh "github.com/laqpay/laqpay/src/util/http"
-	"github.com/laqpay/laqpay/src/visor"
+	"../../src/readable"
+	wh "../../src/util/http"
+	"../../src/visor"
 )
 
 // outputsHandler returns UxOuts filtered by a set of addresses or a set of hashes

@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/laqpay/laqpay/src/cipher/bip32"
+	"../../../src/cipher/bip32"
 )
 
 // Bip44's bip32 path: m / purpose' / coin_type' / account' / change / address_index

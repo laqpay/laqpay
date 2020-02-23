@@ -2,7 +2,7 @@
 
 package daemon
 
-import "github.com/laqpay/laqpay/src/cipher/encoder"
+import "../../src/cipher/encoder"
 
 // encodeSizeIPAddr computes the size of an encoded object of type IPAddr
 func encodeSizeIPAddr(obj *IPAddr) uint64 {

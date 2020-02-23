@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/util/mathutil"
-	"github.com/laqpay/laqpay/src/util/timeutil"
-	"github.com/laqpay/laqpay/src/visor"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/util/mathutil"
+	"../../src/util/timeutil"
+	"../../src/visor"
 )
 
 // BlockBodyVerbose represents a verbose readable block body

@@ -2,7 +2,7 @@
 
 package coin
 
-import "github.com/laqpay/laqpay/src/cipher/encoder"
+import "../../src/cipher/encoder"
 
 // encodeSizeBlockHeader computes the size of an encoded object of type BlockHeader
 func encodeSizeBlockHeader(obj *BlockHeader) uint64 {

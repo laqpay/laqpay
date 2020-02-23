@@ -14,8 +14,8 @@ import (
 
 	"github.com/boltdb/bolt"
 
-	"github.com/laqpay/laqpay/src/cipher/encoder"
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../../src/cipher/encoder"
+	"../../../src/util/logging"
 )
 
 var (

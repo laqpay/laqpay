@@ -11,7 +11,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/laqpay/laqpay/src/util/logging"
+	"../../../src/util/logging"
 )
 
 const (

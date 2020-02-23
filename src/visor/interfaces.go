@@ -1,12 +1,12 @@
 package visor
 
 import (
-	"github.com/laqpay/laqpay/src/cipher"
-	"github.com/laqpay/laqpay/src/coin"
-	"github.com/laqpay/laqpay/src/params"
-	"github.com/laqpay/laqpay/src/visor/blockdb"
-	"github.com/laqpay/laqpay/src/visor/dbutil"
-	"github.com/laqpay/laqpay/src/visor/historydb"
+	"../../src/cipher"
+	"../../src/coin"
+	"../../src/params"
+	"../../src/visor/blockdb"
+	"../../src/visor/dbutil"
+	"../../src/visor/historydb"
 )
 
 //go:generate mockery -name Historyer -case underscore -inpkg -testonly
