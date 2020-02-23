@@ -745,8 +745,8 @@ func (c *NodeConfig) applyConfigMode(configMode string) {
 	case "STANDALONE_CLIENT":
 		c.EnableAllAPISets = true
 		c.EnabledAPISets = api.EndpointsInsecureWalletSeed
-		c.EnableGUI = true
-		c.LaunchBrowser = true
+		c.EnableGUI = false
+		c.LaunchBrowser = false
 		c.DisableCSRF = false
 		c.DisableHeaderCheck = false
 		c.DisableCSP = false
