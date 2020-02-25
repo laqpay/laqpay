@@ -753,8 +753,8 @@ func (c *NodeConfig) applyConfigMode(configMode string) {
 		c.DownloadPeerList = true
 		c.WebInterface = true
 		c.LogToFile = false
-		c.ResetCorruptDB = true
-		c.WebInterfacePort = 0 // randomize web interface port
+		c.ResetCorruptDB = false
+		c.WebInterfacePort = 6420 // randomize web interface port
 	default:
 		panic("Invalid ConfigMode")
 	}

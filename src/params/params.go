@@ -8,7 +8,7 @@ AVOID EDITING THIS MANUALLY
 var (
 	// MainNetDistribution Laqpay mainnet coin distribution parameters
 	MainNetDistribution = Distribution{
-		MaxCoinSupply:        80000000000000,
+		MaxCoinSupply:        80000000,
 		InitialUnlockedCount: 1,
 		UnlockAddressRate:    5,
 		UnlockTimeInterval:   31536000,

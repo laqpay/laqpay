@@ -93,6 +93,7 @@ func hostCheck(apiVersion, host string, hostWhitelist []string, handler http.Han
 	}
 	hostWhitelistMap[fmt.Sprintf("127.0.0.1:%d", port)] = struct{}{}
 	hostWhitelistMap[fmt.Sprintf("localhost:%d", port)] = struct{}{}
+	hostWhitelistMap[fmt.Sprintf("node.laqpay.com")] = struct{}{}
 
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		// NOTE: The "Host" header is not in http.Request.Header, it's put in the http.Request.Host field
@@ -125,6 +126,7 @@ func originRefererCheck(apiVersion, host string, hostWhitelist []string, handler
 	if addr, port, _ := iputil.SplitAddr(host); iputil.IsLocalhost(addr) { //nolint:errcheck
 		hostWhitelistMap[fmt.Sprintf("127.0.0.1:%d", port)] = struct{}{}
 		hostWhitelistMap[fmt.Sprintf("localhost:%d", port)] = struct{}{}
+		hostWhitelistMap[fmt.Sprintf("node.laqpay.com")] = struct{}{}
 	} else {
 		hostWhitelistMap[host] = struct{}{}
 	}

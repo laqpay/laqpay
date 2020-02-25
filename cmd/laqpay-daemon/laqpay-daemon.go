@@ -29,7 +29,7 @@ var (
 	// ConfigMode (possible values are "", "STANDALONE_CLIENT").
 	// This is used to change the default configuration.
 	// Can be set by -ldflags
-	ConfigMode = "STANDALONE_CLIENT"
+	ConfigMode = ""
 
 	logger = logging.MustGetLogger("main")
 
