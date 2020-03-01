@@ -51,7 +51,10 @@ var (
 	GenesisCoinVolume uint64 = 80000000000000
 
 	// DefaultConnections the default trust node addresses
-	DefaultConnections = []string{}
+	DefaultConnections = []string{
+		"138.201.196.174:6000",
+		"193.47.33.235:6000",
+	}
 
 	nodeConfig = laqpay.NewNodeConfig(ConfigMode, fiber.NodeConfig{
 		CoinName:            CoinName,
