@@ -111,7 +111,7 @@ func getWordIndex(word string) (int, bool) {
 
 // DefaultMnemonicEntropyBitSize is the default bit size for NewDefaultMnemonic's entropy
 // TODO -- make 24 word seeds default? (256 bits entropy - recommended for HD wallets)
-const DefaultMnemonicEntropyBitSize = 128
+const DefaultMnemonicEntropyBitSize = 256
 
 // NewDefaultMnemonic returns a generated mnemonic using entropy with bitSize 128
 func NewDefaultMnemonic() (string, error) {

@@ -1104,7 +1104,7 @@ func (c *Coin) initLogFile() (*os.File, error) {
 	}
 
 	// open log file
-	tf := "2006-01-02-030405"
+	tf := "2020-03-01-030405"
 	logfile := filepath.Join(logDir, fmt.Sprintf("%s-v%s.log", time.Now().Format(tf), c.config.Build.Version))
 
 	f, err := os.OpenFile(logfile, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0600)

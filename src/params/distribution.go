@@ -83,7 +83,7 @@ func (d *Distribution) LockedAddresses() []string {
 }
 
 // AddressesDecoded returns a copy of the hardcoded distribution addresses array.
-// Each address has 1,000,000 coins. There are 100 addresses.
+// Each address has 800,000 coins. There are 100 addresses.
 func (d *Distribution) AddressesDecoded() []cipher.Address {
 	d.mustDecodeAddresses()
 	addrs := make([]cipher.Address, len(d.addressesDecoded))

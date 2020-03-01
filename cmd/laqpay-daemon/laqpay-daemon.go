@@ -37,16 +37,16 @@ var (
 	CoinName = "laqpay"
 
 	// GenesisSignatureStr hex string of genesis signature
-	GenesisSignatureStr = "7fad4367ed3632c4f45008b483af06657fcfaafe53ec2e8f342af1d7122e2fb7726bfeae654d775b78ba263a7b3a0087cc6439f1f358af503c32c0d08c93597000"
+	GenesisSignatureStr = "a38878da1d8594929489a84ddd07201f9c7dc72d302dacbd4e892c2c1bbcfcc72d9bfd711a1a20084c7ecd2fc7bbf14f410767587f11592aa92d15dd644a9cea01"
 	// GenesisAddressStr genesis address string
-	GenesisAddressStr = "2P6fPf4vd3mAvQeyyg4X5jdc78JmCotT7Ae"
+	GenesisAddressStr = "2E8KVvGvoMsC9Cohj7MBKgHLmcmdWBCdRkv"
 	// BlockchainPubkeyStr pubic key string
-	BlockchainPubkeyStr = "0341ba8589b51981f0c9c16b51709def29979b5a81d4d6fb59c8f17c5303655fb4"
+	BlockchainPubkeyStr = "02ca3b946a100b02ec3f9e92a5093c562e53a17fbad441c5dfc1be067fec987b8c"
 	// BlockchainSeckeyStr empty private key string
 	BlockchainSeckeyStr = ""
 
 	// GenesisTimestamp genesis block create unix time
-	GenesisTimestamp uint64 = 1582289770
+	GenesisTimestamp uint64 = 1583062083
 	// GenesisCoinVolume represents the coin capacity
 	GenesisCoinVolume uint64 = 80000000000000
 
