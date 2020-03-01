@@ -37,24 +37,21 @@ var (
 	CoinName = "laqpay"
 
 	// GenesisSignatureStr hex string of genesis signature
-	GenesisSignatureStr = "a38878da1d8594929489a84ddd07201f9c7dc72d302dacbd4e892c2c1bbcfcc72d9bfd711a1a20084c7ecd2fc7bbf14f410767587f11592aa92d15dd644a9cea01"
+	GenesisSignatureStr = "28d0e64fc177e589e1cc39a9a10ebe19a8a3f18bb3f9daf14d443c12d131346278935cbf9ae7097b4b4baa5d5259ea53fca76ac081f2f8f5eb9c0f9a7520429e00"
 	// GenesisAddressStr genesis address string
-	GenesisAddressStr = "2E8KVvGvoMsC9Cohj7MBKgHLmcmdWBCdRkv"
+	GenesisAddressStr = "2UtyPbZ6xyBMDEncV5u1ZZDZF6E9edwciZf"
 	// BlockchainPubkeyStr pubic key string
-	BlockchainPubkeyStr = "02ca3b946a100b02ec3f9e92a5093c562e53a17fbad441c5dfc1be067fec987b8c"
+	BlockchainPubkeyStr = "028605c8ea5f05b238d590829f4597ed1e52c621a556d3e7b8ade0f1410742f632"
 	// BlockchainSeckeyStr empty private key string
 	BlockchainSeckeyStr = ""
 
 	// GenesisTimestamp genesis block create unix time
-	GenesisTimestamp uint64 = 1583062083
+	GenesisTimestamp uint64 = 1583070642
 	// GenesisCoinVolume represents the coin capacity
 	GenesisCoinVolume uint64 = 80000000000000
 
 	// DefaultConnections the default trust node addresses
-	DefaultConnections = []string{
-		"138.201.196.174:6000",
-		"193.47.33.235:6000",
-	}
+	DefaultConnections = []string{}
 
 	nodeConfig = laqpay.NewNodeConfig(ConfigMode, fiber.NodeConfig{
 		CoinName:            CoinName,
