@@ -1,21 +1,17 @@
-# Laqpay
+# LaQ Pay
 
-[![Build Status](https://travis-ci.com/laqpay/laqpay.svg)](https://travis-ci.com/laqpay/laqpay)
-[![GoDoc](https://godoc.org/github.com/laqpay/laqpay?status.svg)](https://godoc.org/github.com/laqpay/laqpay)
-[![Go Report Card](https://goreportcard.com/badge/github.com/laqpay/laqpay)](https://goreportcard.com/report/github.com/laqpay/laqpay)
+LaQ Pay is a next-generation cryptocurrency.
 
-Laqpay is a next-generation cryptocurrency.
-
-Laqpay was written from scratch and designed over four years to realize the
+LaQ Pay was written from scratch and designed over four years to realize the
 ideal of Bitcoin and represents the apex of cryptocurrency design.
-Laqpay is not designed to add features to Bitcoin,
+LaQ Pay is not designed to add features to Bitcoin,
 but rather improves Bitcoin by increasing simplicity,
 security and stripping out everything non-essential.
 
-Some people have hyped the Laqpay Project as leading into "Bitcoin 3.0".
+Some people have hyped the LaQ Pay Project as leading into "Bitcoin 3.0".
 The coin itself is not "Bitcoin 3.0",
 but is rather "Bitcoin 1.0". Bitcoin is a prototype crypto-coin.
-Laqpay was designed to be what Bitcoin would look like if it were built from
+LaQ Pay was designed to be what Bitcoin would look like if it were built from
 scratch, to remedy the rough edges in the Bitcoin design.
 
 - no duplicate coin-base outputs
@@ -31,12 +27,12 @@ scratch, to remedy the rough edges in the Bitcoin design.
 
 ## Links
 
-* [laqpay.com](https://www.laqpay.com)
-* [Laqpay Blog](https://www.laqpay.com/blog)
-* [Laqpay Docs](https://www.laqpay.com/docs)
-* [Laqpay Blockchain Explorer](https://explorer.laqpay.com)
-* [Laqpay Development Telegram Channel](https://t.me/laqpaydev)
-* [Laqpay Github Wiki](https://github.com/laqpay/laqpay/wiki)
+* [LaQ Pay](https://www.laqpay.com)
+* [LaQ Pay Blog](https://www.laqpay.com/blog)
+* [LaQ Pay Docs](https://www.laqpay.com/docs)
+* [LaQ Pay Explorer](https://explorer.laqpay.com)
+* [LaQ Pay Telegram Channel](https://t.me/laqpay_news)
+* [LaQ Pay Github Wiki](https://github.com/laqpay/laqpay/wiki)
 
 ## Table of Contents
 
@@ -46,16 +42,16 @@ scratch, to remedy the rough edges in the Bitcoin design.
 - [Installation](#installation)
 	- [Go 1.10+ Installation and Setup](#go-110-installation-and-setup)
 	- [Go get laqpay](#go-get-laqpay)
-	- [Run Laqpay from the command line](#run-laqpay-from-the-command-line)
-	- [Show Laqpay node options](#show-laqpay-node-options)
-	- [Run Laqpay with options](#run-laqpay-with-options)
+	- [Run LaQ Pay from the command line](#run-laqpay-from-the-command-line)
+	- [Show LaQ Pay node options](#show-laqpay-node-options)
+	- [Run LaQ Pay with options](#run-laqpay-with-options)
 	- [Docker image](#docker-image)
 	- [Building your own images](#building-your-own-images)
 	- [Development image](#development-image)
 - [API Documentation](#api-documentation)
 	- [REST API](#rest-api)
-	- [Laqpay command line interface](#laqpay-command-line-interface)
-- [Integrating Laqpay with your application](#integrating-laqpay-with-your-application)
+	- [LaQ Pay command line interface](#laqpay-command-line-interface)
+- [Integrating LaQ Pay with your application](#integrating-laqpay-with-your-application)
 - [Contributing a node to the network](#contributing-a-node-to-the-network)
 - [Creating a new coin](#creating-a-new-coin)
 - [Daemon CLI Options](#daemon-cli-options)
@@ -103,7 +99,7 @@ scratch, to remedy the rough edges in the Bitcoin design.
 
 ## Installation
 
-Laqpay supports go1.10+.
+LaQ Pay supports go1.10+.
 
 ### Go 1.10+ Installation and Setup
 
@@ -120,21 +116,21 @@ This will download `github.com/laqpay/laqpay` to `$GOPATH/src/github.com/laqpay/
 You can also clone the repo directly with `git clone https://github.com/laqpay/laqpay`,
 but it must be cloned to this path: `$GOPATH/src/github.com/laqpay/laqpay`.
 
-### Run Laqpay from the command line
+### Run LaQ Pay from the command line
 
 ```sh
 $ cd $GOPATH/src/github.com/laqpay/laqpay
 $ make run-client
 ```
 
-### Show Laqpay node options
+### Show LaQ Pay node options
 
 ```sh
 $ cd $GOPATH/src/github.com/laqpay/laqpay
 $ make run-help
 ```
 
-### Run Laqpay with options
+### Run LaQ Pay with options
 
 Example:
 
@@ -145,7 +141,7 @@ $ make ARGS="--launch-browser=false -data-dir=/custom/path" run
 
 ### Docker image
 
-This is the quickest way to start using Laqpay using Docker.
+This is the quickest way to start using LaQ Pay using Docker.
 
 ```sh
 $ docker volume create laqpay-data
@@ -182,7 +178,7 @@ Access the API: [http://localhost:6420/version](http://localhost:6420/version).
 ### Development image
 
 The [laqpay/laqpaydev-cli docker image](docker/images/dev-cli/README.md) is provided in order to make
-easy to start developing Laqpay. It comes with the compiler, linters, debugger
+easy to start developing LaQ Pay. It comes with the compiler, linters, debugger
 and the vim editor among other tools.
 
 The [laqpay/laqpaydev-dind docker image](docker/images/dev-docker/README.md) comes with docker installed
@@ -198,22 +194,22 @@ and useful tools included in `laqpay/laqpaydev-cli`.
 
 [REST API](src/api/README.md).
 
-### Laqpay command line interface
+### LaQ Pay command line interface
 
 [CLI command API](cmd/cli/README.md).
 
-## Integrating Laqpay with your application
+## Integrating LaQ Pay with your application
 
-[Laqpay Integration Documentation](INTEGRATION.md)
+[LaQ Pay Integration Documentation](INTEGRATION.md)
 
 ## Contributing a node to the network
 
 Add your node's `ip:port` to the [peers.txt](peers.txt) file.
-This file will be periodically uploaded to https://downloads.laqpay.com/blockchain/peers.txt
+This file will be periodically uploaded to https://api.laqpay.com/network/peers
 and used to seed client with peers.
 
 *Note*: Do not add Laqwire nodes to `peers.txt`.
-Only add Laqpay nodes with high uptime and a static IP address (such as a Laqpay node hosted on a VPS).
+Only add LaQ Pay nodes with high uptime and a static IP address (such as a LaQ Pay node hosted on a VPS).
 
 ## Creating a new coin
 
@@ -221,14 +217,14 @@ See the [newcoin tool README](./cmd/newcoin/README.md)
 
 ## Daemon CLI Options
 
-See the [Laqpay Daemon CLI options](./cmd/laqpay/README.md)
+See the [LaQ Pay Daemon CLI options](./cmd/laqpay/README.md)
 
 ## URI Specification
 
-Laqpay URIs obey the same rules as specified in Bitcoin's [BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki).
+LaQ Pay URIs obey the same rules as specified in Bitcoin's [BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki).
 They use the same fields, except with the addition of an optional `hours` parameter, specifying the coin hours.
 
-Example Laqpay URIs:
+Example LaQ Pay URIs:
 
 * `laqpay:2hYbwYudg34AjkJJCRVRcMeqSWHUixjkfwY`
 * `laqpay:2hYbwYudg34AjkJJCRVRcMeqSWHUixjkfwY?amount=123.456&hours=70`
@@ -278,7 +274,7 @@ We have two branches: `master` and `develop`.
 
 ### Client libraries
 
-Laqpay implements client libraries which export core functionality for usage from
+LaQ Pay implements client libraries which export core functionality for usage from
 other programming languages.
 
 * [liblaqpay C client library and SWIG interface](https://github.com/laqpay/liblaqpay)
@@ -667,67 +663,9 @@ Performs these actions before releasing:
     * Load a test wallet with nonzero balance from seed to confirm wallet loading works
     * Send coins to another wallet to confirm spending works
     * Restart the client, confirm that it reloads properly
-* For both the Android and iOS mobile wallets, configure the node url to be https://staging.node.laqpay.com
+* For both the Android and iOS mobile wallets, configure the node url to be https://node.laqpay.com
   and test all operations to ensure it will work with the new node version.
 
 #### Creating release builds
 
 [Create Release builds](electron/README.md).
-
-#### Release signing
-
-Releases are signed with this PGP key:
-
-`0x5801631BD27C7874`
-
-The fingerprint for this key is:
-
-```
-pub   ed25519 2017-09-01 [SC] [expires: 2023-03-18]
-      10A7 22B7 6F2F FE7B D238  0222 5801 631B D27C 7874
-uid                      GZ-C LAQPAY <token@protonmail.com>
-sub   cv25519 2017-09-01 [E] [expires: 2023-03-18]
-```
-
-Keybase.io account: https://keybase.io/gzc
-
-Releases and their signatures can be found on the [releases page](https://github.com/laqpay/laqpay/releases).
-
-Instructions for generating a PGP key, publishing it, signing the tags and binaries:
-https://gist.github.com/gz-c/de3f9c43343b2f1a27c640fe529b067c
-
-## Responsible Disclosure
-
-Security flaws in laqpay source or infrastructure can be sent to security@laqpay.com.
-Bounties are available for accepted critical bug reports.
-
-PGP Key for signing:
-
-```
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-mDMEWaj46RYJKwYBBAHaRw8BAQdApB44Kgde4Kiax3M9Ta+QbzKQQPoUHYP51fhN
-1XTSbRi0I0daLUMgU0tZQ09JTiA8dG9rZW5AcHJvdG9ubWFpbC5jb20+iJYEExYK
-AD4CGwMFCwkIBwIGFQgJCgsCBBYCAwECHgECF4AWIQQQpyK3by/+e9I4AiJYAWMb
-0nx4dAUCWq/TNwUJCmzbzgAKCRBYAWMb0nx4dKzqAP4tKJIk1vV2bO60nYdEuFB8
-FAgb5ITlkj9PyoXcunETVAEAhigo4miyE/nmE9JT3Q/ZAB40YXS6w3hWSl3YOF1P
-VQq4OARZqPjpEgorBgEEAZdVAQUBAQdAa8NkEMxo0dr2x9PlNjTZ6/gGwhaf5OEG
-t2sLnPtYxlcDAQgHiH4EGBYKACYCGwwWIQQQpyK3by/+e9I4AiJYAWMb0nx4dAUC
-Wq/TTQUJCmzb5AAKCRBYAWMb0nx4dFPAAQD7otGsKbV70UopH+Xdq0CDTzWRbaGw
-FAoZLIZRcFv8zwD/Z3i9NjKJ8+LS5oc8rn8yNx8xRS+8iXKQq55bDmz7Igw=
-=5fwW
------END PGP PUBLIC KEY BLOCK-----
-```
-
-Key ID: [0x5801631BD27C7874](https://pgp.mit.edu/pks/lookup?search=0x5801631BD27C7874&op=index)
-
-The fingerprint for this key is:
-
-```
-pub   ed25519 2017-09-01 [SC] [expires: 2023-03-18]
-      10A7 22B7 6F2F FE7B D238  0222 5801 631B D27C 7874
-uid                      GZ-C LAQPAY <token@protonmail.com>
-sub   cv25519 2017-09-01 [E] [expires: 2023-03-18]
-```
-
-Keybase.io account: https://keybase.io/gzc
