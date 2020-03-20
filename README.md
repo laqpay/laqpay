@@ -37,7 +37,5 @@ scratch, to remedy the rough edges in the Bitcoin design.
 
 ```sh
 git clone https://github.com/laqpay/laqpay
-cd cmd/laqpay-address && go build
-cd cmd/laqpay-daemon && go build
-cd cmd/laqpay-wallet-cli && go build
+cd laqpay/cmd/laqpay-address && go build && cd ../laqpay-daemon && go build && cd ../laqpay-wallet-cli && go build
 ```
