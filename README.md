@@ -39,3 +39,13 @@ scratch, to remedy the rough edges in the Bitcoin design.
 git clone https://github.com/laqpay/laqpay
 cd laqpay/cmd/laqpay-address && go build && cd ../laqpay-daemon && go build && cd ../laqpay-wallet-cli && go build
 ```
+
+## Help LaQ Pay
+
+For help, use the --help key
+
+```sh
+./laqpay-daemon --help
+or
+./laqpay-wallet-cli --help
+```
