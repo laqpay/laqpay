@@ -64,7 +64,7 @@ var (
 		"193.47.33.247:6000",
 		"193.47.33.249:6000",
 		"193.47.33.250:6000",
-		"2a01:48a0:4015:3::a5:6000"
+		"2a01:48a0:4015:3::a5:6000",
 	}
 
 	nodeConfig = laqpay.NewNodeConfig(ConfigMode, fiber.NodeConfig{
