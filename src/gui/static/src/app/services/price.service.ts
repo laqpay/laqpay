@@ -7,7 +7,7 @@ import { ISubscription } from 'rxjs/Subscription';
 
 @Injectable()
 export class PriceService {
-  readonly PRICE_API_ID = 'laq-laqpay';
+  readonly PRICE_API_ID = 'laq-pay';
 
   price: Subject<number> = new BehaviorSubject<number>(null);
 
@@ -51,10 +51,10 @@ export class PriceService {
       this.lastPriceSubscription.unsubscribe();
     }
 
-    this.lastPriceSubscription = this.http.get(`https://api.coinpaprika.com/v1/tickers/${this.PRICE_API_ID}?quotes=USD`)
+    this.lastPriceSubscription = this.http.get(`https://api.coingecko.com/api/v3/simple/price?ids=${this.PRICE_API_ID}&vs_currencies=btc%2Cusd`)
       .subscribe((response: any) => {
         this.lastPriceSubscription = null;
-        this.price.next(response.quotes.USD.price);
+        this.price.next(response.laq-pay.usd);
       },
       () => this.startTimer(30000));
   }
