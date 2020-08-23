@@ -1,7 +1,7 @@
 export const AppConfig = {
-  otcEnabled: true,
+  otcEnabled: false,
   maxHardwareWalletAddresses: 1,
-  useHwWalletDaemon: true,
+  useHwWalletDaemon: false,
   urlForHwWalletVersionChecking: 'https://api.laqpay.com/wallet/version',
   hwWalletDownloadUrlAndPrefix: 'https://api.laqpay.com/wallet/laq-wallet-firmware-v',
 
