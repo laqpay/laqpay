@@ -54,7 +54,7 @@ export class PriceService {
     this.lastPriceSubscription = this.http.get(`https://api.coingecko.com/api/v3/simple/price?ids=${this.PRICE_API_ID}&vs_currencies=btc%2Cusd`)
       .subscribe((response: any) => {
         this.lastPriceSubscription = null;
-        this.price.next(response.laq-pay.usd);
+        this.price.next(response["laq-pay"]["usd"]);
       },
       () => this.startTimer(30000));
   }
