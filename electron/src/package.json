@@ -1,7 +1,7 @@
 {
   "main": "electron-main.js",
   "license": "MIT",
-  "description": "laqpay wallet",
+  "description": "Wallet for LaQ Pay",
   "dependencies": {
     "axios": "^0.18.0",
     "electron-context-menu": "^0.9.1",

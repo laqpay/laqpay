@@ -48,7 +48,7 @@ function startLaqpay() {
     console.log('Starting laqpay from electron');
 
     if (laqpay) {
-      console.log('Laqpay already running');
+      console.log('LaQ Pay Wallet already running');
       app.emit('laqpay-ready');
       return
     }
@@ -126,15 +126,15 @@ function startLaqpay() {
     });
 
     laqpay.on('close', (code) => {
-      // log.info('Laqpay closed');
-      console.log('Laqpay closed');
+      // log.info('LaQ Pay Wallet closed');
+      console.log('LaQ Pay Wallet closed');
       showError();
       reset();
     });
 
     laqpay.on('exit', (code) => {
-      // log.info('Laqpay exited');
-      console.log('Laqpay exited');
+      // log.info('LaQ Pay Wallet exited');
+      console.log('LaQ Pay Wallet exited');
       showError();
       reset();
     });
@@ -176,7 +176,7 @@ function createWindow(url) {
     width: 1200,
     height: 900,
     backgroundColor: '#000000',
-    title: 'Laqpay',
+    title: 'LaQ Pay Wallet',
     icon: iconPath,
     nodeIntegration: false,
     webPreferences: {
@@ -243,7 +243,7 @@ function createWindow(url) {
 
   // create application's main menu
   var template = [{
-    label: 'Laqpay',
+    label: 'LaQ Pay Wallet',
     submenu: [
       { label: 'Quit', accelerator: 'Command+Q', click: function() { app.quit(); } }
     ]
