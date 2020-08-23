@@ -8,9 +8,9 @@
         <p *ngIf="!highest && loading" class="coins"><span>&nbsp;</span></p>
         <p class="dollars">
           <span *ngIf="price">
-            <span *ngIf="!loading">{{ (coins * price) | currency:'USD':'symbol':'1.2-2' }}</span>
+            <span *ngIf="!loading">{{ (coins * price) | currency:'USD':'symbol':'1.2-8' }}</span>
             <span *ngIf="loading">-</span>
-            ({{ price | currency:'USD':'symbol':'1.2-2' }})
+            ({{ price | currency:'USD':'symbol':'1.2-8' }})
           </span>
           <span *ngIf="!price">{{ 'common.loading' | translate }}</span>
         </p>
