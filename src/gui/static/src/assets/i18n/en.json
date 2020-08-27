@@ -1,7 +1,7 @@
 {
   "common": {
     "coin-id": "LAQ",
-    "coin-hours": "Coin Hours",
+    "coin-hours": "LAQH",
     "usd": "USD",
     "loading": "Loading...",
     "new": "New",
@@ -27,14 +27,14 @@
     "wallets": "Wallets",
     "send": "Send",
     "history": "History",
-    "buy-coin": "Buy Laqpay",
+    "buy-coin": "Buy LAQ",
     "network": "Networking",
     "blockchain": "Blockchain",
     "outputs": "Outputs",
     "transactions": "Transactions",
     "pending-txs": "Pending Transactions",
     "backup": "Backup Wallet",
-    "explorer": "Laqpay Explorer",
+    "explorer": "LaQ Pay Explorer",
     "seed": "Wallet Seed",
     "reset": "Reset Password",
     "exchange": "Exchange",
@@ -73,29 +73,29 @@
     "select-address": "Select address",
     "generate": "Generate",
     "deposit-location": "Deposit Location",
-    "deposit-location-desc": "Choose a wallet where you'd like us to deposit your Laqpay after we receive your Bitcoin.",
+    "deposit-location-desc": "Choose a wallet where you'd like us to deposit your LaQ Pay after we receive your Bitcoin.",
     "make-choice": "Make a choice",
-    "wallets-desc": "Each time a new wallet and address are selected, a new BTC address is generated. A single Laqpay address can have up to 5 BTC addresses assigned to it.",
+    "wallets-desc": "Each time a new wallet and address are selected, a new BTC address is generated. A single LaQ Pay address can have up to 5 BTC addresses assigned to it.",
     "send": "Send Bitcoin",
-    "send-desc": "Send Bitcoin to the address below. Once received, we will deposit the Laqpay to a new address in the wallet selected above at the current rate of {{ rate }} LAQ/BTC.",
-    "fraction-warning": "Only send multiple of the LAQ/BTC rate! Laqpay is sent in whole number; fractional LAQ is not sent!",
+    "send-desc": "Send Bitcoin to the address below. Once received, we will deposit the LaQ Pay to a new address in the wallet selected above at the current rate of {{ rate }} LAQ/BTC.",
+    "fraction-warning": "Only send multiple of the LAQ/BTC rate! LaQ Pay is sent in whole number fractional LAQ is not sent!",
     "receive": "Receive Laq",
-    "receive-desc": "After receiving your Bitcoin, we'll send you your Laqpay. It may take anywhere between 20 minutes and an hour to receive your LAQ.",
+    "receive-desc": "After receiving your Bitcoin, we'll send you your LAQ. It may take anywhere between 20 minutes and an hour to receive your LAQ.",
     "status-button": "Status:",
     "check-status-button": "Check Status",
     "new-order-button": "New Order"
   },
 
   "wizard": {
-    "wallet-desc": "If you don't have a Laqpay wallet, use the generated seed to create a new one. If you already have a wallet, toggle over to \"Load Wallet\" and enter your seed.",
+    "wallet-desc": "If you don't have a LaQ Pay wallet, use the generated seed to create a new one. If you already have a wallet, toggle over to \"Load Wallet\" and enter your seed.",
     "encrypt-desc": "Increase security of your wallet by encrypting it. By entering a password below, your wallet will be encrypted. Only those with the password will be able access the wallet and remove funds.",
-    "hardware-wallet-link": "Using a Laqwallet?",
+    "hardware-wallet-link": "Using a LaQ Pay Wallet?",
     "finish-button": "Finish",
     "back-button": "Back",
 
     "confirm": {
       "title": "Safeguard your seed!",
-      "desc": "We want to make sure that you wrote down your seed and stored it in a safe place. If you forget your seed, you WILL NOT be able to recover your Laqpay wallet!",
+      "desc": "We want to make sure that you wrote down your seed and stored it in a safe place. If you forget your seed, you WILL NOT be able to recover your LaQ Pay wallet!",
       "checkbox": "It’s safe, I swear.",
       "button": "Continue"
     }
@@ -115,12 +115,12 @@
     "load": "Load Wallet",
     "encryption-enabled": "Encryption enabled",
     "encryption-disabled": "Encryption disabled",
-    "hw-security-warning": "Possible security risk. Access the Laqwallet options (by pressing the \"Laqwallet\" button below the wallets list) while the device is connected for more information.",
+    "hw-security-warning": "Possible security risk. Access the LaQ Pay Wallet options (by pressing the \"LaQ Pay Wallet\" button below the wallets list) while the device is connected for more information.",
     "wallet": "Wallet",
-    "hardware-wallet": "Laqwallet",
-    "delete-confirmation": "WARNING: The wallet \"{{ name }}\" will be removed from the list. To add it again, you will have to reconnect the device and open the Laqwallet options (by pressing the \"Laqwallet\" button below the wallets list). Do you want to continue?",
+    "hardware-wallet": "LaQ Pay Wallet",
+    "delete-confirmation": "WARNING: The wallet \"{{ name }}\" will be removed from the list. To add it again, you will have to reconnect the device and open the LaQ Pay Wallet options (by pressing the \"LaQ Pay Wallet\" button below the wallets list). Do you want to continue?",
     "delete-confirmation-check": "Yeah, I want to delete the wallet.",
-    "max-hardware-wallets-error": "You have already reached the max number of addresses that can be added to the Laqwallet.",
+    "max-hardware-wallets-error": "You have already reached the max number of addresses that can be added to the LaQ Pay Wallet.",
     "add-many-confirmation": "WARNING: If you add too many addresses without using the previous ones or if you use the last ones and not the first ones, some addresses may not be recovered automatically if you try to restore the wallet using the seed (you will have to add them manually). Do you want to continue?",
 
     "new": {
@@ -326,8 +326,8 @@
     "hash": "Hash of last block",
     "current-supply": "Current LAQ supply",
     "total-supply": "Total LAQ supply",
-    "current-coinhour-supply": "Current Coin Hours supply",
-    "total-coinhour-supply": "Total Coin Hours supply"
+    "current-coinhour-supply": "Current LAQH supply",
+    "total-coinhour-supply": "Total LAQH supply"
   },
 
   "network": {
@@ -377,7 +377,7 @@
     "done": "Completed",
     "waiting-confirm": "Waiting for confirmation",
     "waiting-deposit": "Waiting for Bitcoin deposit",
-    "waiting-send": "Waiting to send Laqpay",
+    "waiting-send": "Waiting to send LAQ",
     "unknown": "Unknown"
   },
 
@@ -393,57 +393,57 @@
       "server-error": "Server error"
     },
     "wallet": {
-      "not-enough-hours": "Not enough available Coin Hours to perform the transaction!"
+      "not-enough-hours": "Not enough available LAQH to perform the transaction!"
     }
   },
 
   "hardware-wallet": {
     "general" : {
-      "default-wallet-name": "New Laqwallet",
-      "error-disconnected": "Unable to perform the operation. The Laqwallet is not connected.",
+      "default-wallet-name": "New LaQ Pay Wallet",
+      "error-disconnected": "Unable to perform the operation. The LaQ Pay Wallet is not connected.",
       "simple-error": "Error. Unable to perform the operation.",
-      "generic-error": "Unable to perform the operation. Make sure you have connected a valid Laqwallet and that it is not waiting for input.",
-      "generic-error-internet": "Unable to perform the operation. Make sure you have connected a valid Laqwallet that is not waiting for input and that you have a connection to the internet/node.",
-      "error-incorrect-wallet": "Unable to perform the operation. The connected Laqwallet is different from the expected one.",
+      "generic-error": "Unable to perform the operation. Make sure you have connected a valid LaQ Pay Wallet and that it is not waiting for input.",
+      "generic-error-internet": "Unable to perform the operation. Make sure you have connected a valid LaQ Pay Wallet that is not waiting for input and that you have a connection to the internet/node.",
+      "error-incorrect-wallet": "Unable to perform the operation. The connected LaQ Pay Wallet is different from the expected one.",
       "error-incorrect-pin": "Unable to perform the operation. The PIN you have entered is incorrect.",
-      "confirm": "Please confirm the operation on the Laqwallet.",
-      "confirm-and-more": "Please confirm the operation on the Laqwallet and follow the instructions displayed.",
-      "follow": "Please follow the instructions displayed on the Laqwallet.",
+      "confirm": "Please confirm the operation on the LaQ Pay Wallet.",
+      "confirm-and-more": "Please confirm the operation on the LaQ Pay Wallet and follow the instructions displayed.",
+      "follow": "Please follow the instructions displayed on the LaQ Pay Wallet.",
       "close": "Close",
       "cancel": "Cancel",
       "continue": "Continue",
       "completed": "Operation completed successfully.",
       "refused": "The operation failed or was canceled.",
-      "name-updated": "The name used to identify this Laqwallet in the wallet list has been updated to match the one shown on the device."
+      "name-updated": "The name used to identify this LaQ Pay Wallet in the wallet list has been updated to match the one shown on the device."
     },
     "errors": {
-      "too-many-inputs-outputs": "The transaction has too many inputs or outputs for the Laqwallet. Please try again creating several smaller transactions, each one with a smaller number of recipients (if the current transaction has many) or coins.",
-      "daemon-connection": "Problem connecting to the Laqwallet service.",
+      "too-many-inputs-outputs": "The transaction has too many inputs or outputs for the LaQ Pay Wallet. Please try again creating several smaller transactions, each one with a smaller number of recipients (if the current transaction has many) or coins.",
+      "daemon-connection": "Problem connecting to the LaQ Pay Wallet service.",
       "timeout": "The operation was canceled due to inactivity. Please try again.",
       "invalid-address-generated": "There was a problem with the address generator and the operation had to be canceled.",
       "invalid-address": "Invalid address.",
-      "not-in-bootloader-mode": "To use this option the Laqwallet must be in bootloader mode."
+      "not-in-bootloader-mode": "To use this option the LaQ Pay Wallet must be in bootloader mode."
     },
     "security-warning" : {
       "title": "Security warning",
-      "text": "The last time this Laqwallet was connected, one or more security warnings were found. We recommend that you open the Laqwallet options (by pressing the link below) while the device is connected and solve the security problems before continuing.",
-      "link": "Open the Laqwallet options window.",
+      "text": "The last time this LaQ Pay Wallet was connected, one or more security warnings were found. We recommend that you open the LaQ Pay Wallet options (by pressing the link below) while the device is connected and solve the security problems before continuing.",
+      "link": "Open the LaQ Pay Wallet options window.",
       "check": "I understand the risks and want to continue",
       "continue": "Continue",
       "cancel": "Cancel"
     },
     "options" : {
       "connecting": "Connecting...",
-      "disconnected": "No Laqwallet detected. Please connect a Laqwallet to use this option.",
-      "unconfigured-detected-title": "Unconfigured Laqwallet",
-      "unconfigured-detected": "A seedless Laqwallet has been detected. Select \"Configure automatically\" if you want to configure it as a brand new wallet and start using it. Select \"Restore backup\" if you want to configure the Laqwallet with a previously created seed backup.",
-      "configured-detected": "Laqwallet detected. The device is identified in the wallets list as:",
+      "disconnected": "No LaQ Pay Wallet detected. Please connect a LaQ Pay Wallet to use this option.",
+      "unconfigured-detected-title": "Unconfigured LaQ Pay Wallet",
+      "unconfigured-detected": "A seedless LaQ Pay Wallet has been detected. Select \"Configure automatically\" if you want to configure it as a brand new wallet and start using it. Select \"Restore backup\" if you want to configure the LaQ Pay Wallet with a previously created seed backup.",
+      "configured-detected": "LaQ Pay Wallet detected. The device is identified in the wallets list as:",
       "security-warnings-title": "Security warnings",
       "security-warning-title": "Security warning",
-      "unchecked-version-warning": "It was not possible to verify if the firmware of your Laqwallet is up to date. This could be due to problems with your internet connection or because the service is under maintenance.",
-      "outdated-version-warning": "The firmware of your Laqwallet is outdated. We recommend you to update it as soon as possible to ensure safety. To do this, select the \"Update firmware\" option.",
-      "backup-warning": "You should backup the Laqwallet seed or you could lose access to the funds in case of problems. To do this, select the \"Create a backup\" option.",
-      "pin-warning": "The connected Laqwallet does not have a PIN. The PIN code protects the Laqwallet from unauthorized parties accessing the device. To create a PIN code, select the \"Create PIN code\" option.",
+      "unchecked-version-warning": "It was not possible to verify if the firmware of your LaQ Pay Wallet is up to date. This could be due to problems with your internet connection or because the service is under maintenance.",
+      "outdated-version-warning": "The firmware of your LaQ Pay Wallet is outdated. We recommend you to update it as soon as possible to ensure safety. To do this, select the \"Update firmware\" option.",
+      "backup-warning": "You should backup the LaQ Pay Wallet seed or you could lose access to the funds in case of problems. To do this, select the \"Create a backup\" option.",
+      "pin-warning": "The connected LaQ Pay Wallet does not have a PIN. The PIN code protects the LaQ Pay Wallet from unauthorized parties accessing the device. To create a PIN code, select the \"Create PIN code\" option.",
       "options": "Options:",
       "update-firmware": "Update firmware",
       "configure-automatically": "Configure automatically",
@@ -454,13 +454,13 @@
       "create-pin": "Create PIN code",
       "change-pin": "Change PIN code",
       "delete-pin": "Delete PIN code",
-      "forgotten-pin1": "If you cannot access the wallet because you have forgotten the PIN, you can wipe the Laqwallet and then restore it with the seed by clicking",
+      "forgotten-pin1": "If you cannot access the wallet because you have forgotten the PIN, you can wipe the LaQ Pay Wallet and then restore it with the seed by clicking",
       "forgotten-pin2": "here.",
       "firmware-version": "Device firmware version:"
     },
     "update-firmware-warning" : {
       "title": "Outdated Firmware",
-      "text": "WARNING: the firmware in your Laqwallet is outdated. To stay safe, it is recommended to update it.",
+      "text": "WARNING: the firmware in your LaQ Pay Wallet is outdated. To stay safe, it is recommended to update it.",
       "cancel": "Cancel",
       "update": "Update"
     },
@@ -470,10 +470,10 @@
       "title-install": "Install Firmware",
       "text-downloading": "Checking device and downloading files...",
       "text-bootloader": "WARNING: if you have already configured this device, before continuing you must have a backup of your seed or you could permanently lose access to the funds.",
-      "text-not-bootloader": "To update the firmware of your Laqwallet you must connect it in bootloader mode (connect it to the computer while pressing the two physical buttons of the device). WARNING: if you have already configured this device, before continuing you must have a backup of your seed or you could permanently lose access to the funds.",
-      "text-no-firmware": "Welcome. The currently connected Laqwallet does not have a firmware installed. A firmware will now be installed so you can start using the device. NOTE: if you have already configured this device and want to recover the funds, you will need your seed.",
+      "text-not-bootloader": "To update the firmware of your LaQ Pay Wallet you must connect it in bootloader mode (connect it to the computer while pressing the two physical buttons of the device). WARNING: if you have already configured this device, before continuing you must have a backup of your seed or you could permanently lose access to the funds.",
+      "text-no-firmware": "Welcome. The currently connected LaQ Pay Wallet does not have a firmware installed. A firmware will now be installed so you can start using the device. NOTE: if you have already configured this device and want to recover the funds, you will need your seed.",
       "check": "I understand the risks and want to continue",
-      "follow": "The firmware update has been sent to the Laqwallet. Please continue the process on the device.",
+      "follow": "The firmware update has been sent to the LaQ Pay Wallet. Please continue the process on the device.",
       "connection-error": "It was not possible to download the firmware. This could be due to problems with your internet connection or because the service is under maintenance.",
       "timeout": "The operation was canceled due to inactivity. Please disconnect the device, reconnect it and try again.",
       "finished": "Your device has been configured correctly. Please unplug it before continuing."
@@ -484,29 +484,29 @@
     },
     "restore-seed" : {
       "text": "Before proceeding, please select the number of words that the seed you want to recover has.",
-      "check-text": "You can use this option to enter a seed and check if it is equal to the one in the Laqwallet. Before start, select the number of words the seed you want to check has.",
-      "warning" : "WARNING: to avoid potential problems, use only seeds created with a Laqwallet.",
-      "error-wrong-word": "Error: The retyped word does not match the one requested by the Laqwallet.",
+      "check-text": "You can use this option to enter a seed and check if it is equal to the one in the LaQ Pay Wallet. Before start, select the number of words the seed you want to check has.",
+      "warning" : "WARNING: to avoid potential problems, use only seeds created with a LaQ Pay Wallet.",
+      "error-wrong-word": "Error: The retyped word does not match the one requested by the LaQ Pay Wallet.",
       "error-invalid-seed": "Error: The seed is not valid. Please be sure to enter the correct words in the correct order.",
       "error-wrong-seed": "Error: The seed is valid but does not match the one in the device.",
       "correct-seed": "The seed is valid and matches the one in the device."
     },
     "added" : {
-      "title": "New Laqwallet",
-      "configuring": "New Laqwallet detected. Configuring...",
+      "title": "New LaQ Pay Wallet",
+      "configuring": "New LaQ Pay Wallet detected. Configuring...",
       "done": "Done",
-      "added1": "The connected Laqwallet has been added to the wallets list with the following name:",
-      "added2": "Now you can check the balance and the addresses of the Laqwallet even when it is not connected. Additionally, you can change the name of the wallet or remove it from the wallets list, if you wish.",
+      "added1": "The connected LaQ Pay Wallet has been added to the wallets list with the following name:",
+      "added2": "Now you can check the balance and the addresses of the LaQ Pay Wallet even when it is not connected. Additionally, you can change the name of the wallet or remove it from the wallets list, if you wish.",
       "characters-warning": "If you use non-standard English characters, the name may not be displayed correctly on the device.",
       "ok": "Ok"
     },
     "wipe" : {
-      "warning": "WARNING: All the data on the Laqwallet will be deleted. If you do not have a backup, you will not be able to access your funds again.",
+      "warning": "WARNING: All the data on the LaQ Pay Wallet will be deleted. If you do not have a backup, you will not be able to access your funds again.",
       "confirm-delete": "Also remove from the wallets list"
     },
     "create-backup" : {
-      "warning": "WARNING: You can only create a backup of your Laqwallet seed once. If you decide to continue, you will have to write down a group of words (it is recommended to do it on paper and not on a computer) that will appear on the screen of the Laqwallet and store the list in a safe place. Anyone with access to the word list (the \"seed\") will be able access the wallet funds, so extreme caution is advised.",
-      "instructions": "Write down the word list that appear on the screen of the Laqwallet. Make sure you respect the order and write each word correctly."
+      "warning": "WARNING: You can only create a backup of your LaQ Pay Wallet seed once. If you decide to continue, you will have to write down a group of words (it is recommended to do it on paper and not on a computer) that will appear on the screen of the LaQ Pay Wallet and store the list in a safe place. Anyone with access to the word list (the \"seed\") will be able access the wallet funds, so extreme caution is advised.",
+      "instructions": "Write down the word list that appear on the screen of the LaQ Pay Wallet. Make sure you respect the order and write each word correctly."
     },
     "seed-word" : {
       "title": "Enter word",
@@ -520,7 +520,7 @@
       "pin-mismatch": "Unable to perform the operation. The PINs you have entered do not match."
     },
     "remove-pin" : {
-      "warning": "WARNING: It is not recommended to remove the PIN code from your Laqwallet, as it will be vulnerable to being used by unauthorized parties in case of loss or theft.",
+      "warning": "WARNING: It is not recommended to remove the PIN code from your LaQ Pay Wallet, as it will be vulnerable to being used by unauthorized parties in case of loss or theft.",
       "check": "I understand the risks and want to continue"
     },
     "enter-pin" : {
@@ -528,29 +528,29 @@
       "title-change-current": "Enter the current PIN",
       "title-change-new": "Enter the new PIN",
       "title-change-confirm": "Confirm the new PIN",
-      "instructions": "The PIN layout is displayed on the Laqwallet screen.",
+      "instructions": "The PIN layout is displayed on the LaQ Pay Wallet screen.",
       "instructions-tx": "Enter the PIN to confirm and sign the transaction.",
       "instructions-change": "Please enter a secure PIN consisting of 4 to 8 numbers.",
       "help": "Need help?"
     },
     "pin-help" : {
       "title": "Help",
-      "part1": "When it is necessary to enter the PIN to continue, the Laqwallet screen will display a matrix of 9 boxes with numbers in random order (the order changes each time) and you will be asked to enter the PIN in the software wallet using a matrix of 9 buttons that simply show the symbol •.",
-      "part2": "To enter the PIN, look at the position of the PIN numbers in numbers matrix on the screen of the Laqwallet and press the corresponding buttons in the software wallet. For example, if the PIN is \"23\" and the number 2 is in the upper left, number 3 in the middle of the Laqwallet numbers matrix, press the upper left and middle button in that order in the software wallet.",
-      "part3": "If you wish, you can also use the numpad on your keyboard to enter the PIN. However, as in the previous example, if the PIN is \"23\", you can not simply type \"23\" with the numpad, but you will have to press the keys that are in the position where the numbers 2 and 3 are shown on the screen of the Laqwallet. Taking into account the previous example, you would have to press the \"7\" and \"5\" keys, because those are the keys that you are in the same position as the numbers shown by the Laqwallet."
+      "part1": "When it is necessary to enter the PIN to continue, the LaQ Pay Wallet screen will display a matrix of 9 boxes with numbers in random order (the order changes each time) and you will be asked to enter the PIN in the software wallet using a matrix of 9 buttons that simply show the symbol •.",
+      "part2": "To enter the PIN, look at the position of the PIN numbers in numbers matrix on the screen of the LaQ Pay Wallet and press the corresponding buttons in the software wallet. For example, if the PIN is \"23\" and the number 2 is in the upper left, number 3 in the middle of the LaQ Pay Wallet numbers matrix, press the upper left and middle button in that order in the software wallet.",
+      "part3": "If you wish, you can also use the numpad on your keyboard to enter the PIN. However, as in the previous example, if the PIN is \"23\", you can not simply type \"23\" with the numpad, but you will have to press the keys that are in the position where the numbers 2 and 3 are shown on the screen of the LaQ Pay Wallet. Taking into account the previous example, you would have to press the \"7\" and \"5\" keys, because those are the keys that you are in the same position as the numbers shown by the LaQ Pay Wallet."
     },
     "create-tx" : {
       "title": "Create transaction",
-      "upper-text": "Please confirm the operation in the Laqwallet after verifying if the following data matches EXACTLY with the transaction you wish to send and with those shown by the Laqwallet:",
-      "lower-text": "If any data does not correspond to what the Laqwallet shows or the transaction you wish to send, cancel the operation on your Laqwallet.",
+      "upper-text": "Please confirm the operation in the LaQ Pay Wallet after verifying if the following data matches EXACTLY with the transaction you wish to send and with those shown by the LaQ Pay Wallet:",
+      "lower-text": "If any data does not correspond to what the LaQ Pay Wallet shows or the transaction you wish to send, cancel the operation on your LaQ Pay Wallet.",
       "send-p1": "and",
       "send-p2": "to"
     },
     "confirm-address" : {
       "title": "Confirm address",
-      "instructions": "Please confirm on the Laqwallet if the address is:",
+      "instructions": "Please confirm on the LaQ Pay Wallet if the address is:",
       "short-confirmation": "Address confirmed.",
-      "confirmation": "Address confirmed. For security, you can re-show the address in the Laqwallet using the \"Confirm address\" option, in the menu that you can display by pressing the button at the right of the address balance."
+      "confirmation": "Address confirmed. For security, you can re-show the address in the LaQ Pay Wallet using the \"Confirm address\" option, in the menu that you can display by pressing the button at the right of the address balance."
     }
   },
 

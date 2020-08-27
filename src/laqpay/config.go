@@ -288,7 +288,7 @@ func NewNodeConfig(mode string, node fiber.NodeConfig) NodeConfig {
 		DisabledAPISets: "",
 		EnableAllAPISets: true,
 
-		LaunchBrowser: false,
+		LaunchBrowser: false, // GUI
 		// Data directory holds app data
 		DataDirectory: node.DataDirectory,
 		// Web GUI static resources
