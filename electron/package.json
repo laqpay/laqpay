@@ -3,7 +3,7 @@
     "productName": "LaQ Pay Wallet",
     "author": "laqpay",
     "main": "src/electron-main.js",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Wallet for LaQ Pay",
     "license": "MIT",
     "build": {
