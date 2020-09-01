@@ -62,15 +62,15 @@ function startLaqpay() {
     var exe = (() => {
       switch (process.platform) {
         case 'darwin':
-          return path.join(appPath, '../../Resources/app/laqpay');
+          return path.join(appPath, '../../Resources/app/laqpay-daemon');
         case 'win32':
           // Use only the relative path on windows due to short path length
           // limits
-          return './resources/app/laqpay.exe';
+          return './resources/app/laqpay-daemon.exe';
         case 'linux':
-          return path.join(path.dirname(appPath), './resources/app/laqpay');
+          return path.join(path.dirname(appPath), './resources/app/laqpay-daemon');
         default:
-          return './resources/app/laqpay';
+          return './resources/app/laqpay-daemon';
       }
     })()
 
@@ -85,18 +85,18 @@ function startLaqpay() {
       '-disable-csrf=false',
       '-reset-corrupt-db=true',
       '-enable-gui=true',
-      '-web-interface-port=1749' // random port assignment
+      '-web-interface-port=0' // random port assignment
       // will break
       // broken (automatically generated certs do not work):
       // '-web-interface-https=true',
     ]
-    laqpay = childProcess.spawn(exe, args, {detached: true});
-
+    laqpay = childProcess.spawn(exe, args);
 
     createWindow();
+
     laqpay.on('error', (e) => {
-   	 currentURL = 'http://localhost:1749/';
-  	 app.emit('laqpay-ready', { url: currentURL });
+      showError();
+      app.quit();
     });
 
     laqpay.stdout.on('data', (data) => {
@@ -126,30 +126,26 @@ function startLaqpay() {
     });
 
     laqpay.on('close', (code) => {
-      currentURL = 'http://localhost:1749/';
-      app.emit('laqpay-ready', { url: currentURL });
       // log.info('LaQ Pay Wallet closed');
-      //console.log('LaQ Pay Wallet closed');
-      //showError();
-      //reset();
+      console.log('LaQ Pay Wallet closed');
+      showError();
+      reset();
     });
 
     laqpay.on('exit', (code) => {
-      currentURL = 'http://localhost:1749/';
-      app.emit('laqpay-ready', { url: currentURL });
       // log.info('LaQ Pay Wallet exited');
-      //console.log('LaQ Pay Wallet exited');
-      //showError();
-      //reset();
+      console.log('LaQ Pay Wallet exited');
+      showError();
+      reset();
     });
 
   } else {
     // If in dev mode, simply open the dev server URL.
-    currentURL = 'http://localhost:1749/';
+    currentURL = 'http://localhost:4200/';
     app.emit('laqpay-ready', { url: currentURL });
 
     axios
-      .get('http://localhost:1749/api/v1/wallets/folderName')
+      .get('http://localhost:4200/api/v1/wallets/folderName')
       .then(response => {
         walletsFolder = response.data.address;
         //hwCode.setWalletsFolderPath(walletsFolder);
@@ -366,7 +362,7 @@ app.on('activate', () => {
 
 app.on('will-quit', () => {
   if (laqpay) {
-    //laqpay.kill('SIGINT');
+    laqpay.kill('SIGINT');
   }
 });
 
