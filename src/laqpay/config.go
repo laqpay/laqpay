@@ -264,7 +264,7 @@ func NewNodeConfig(mode string, node fiber.NodeConfig) NodeConfig {
 		// MaxOutgoingConnections is the maximum outgoing connections allowed
 		MaxOutgoingConnections: 16,
 		// MaxDefaultOutgoingConnections is the maximum default outgoing connections allowed
-		MaxDefaultPeerOutgoingConnections: 8,
+		MaxDefaultPeerOutgoingConnections: 16,
 		DownloadPeerList:                  true,
 		PeerListURL:                       node.PeerListURL,
 		// How often to make outgoing connections, in seconds
@@ -288,7 +288,7 @@ func NewNodeConfig(mode string, node fiber.NodeConfig) NodeConfig {
 		DisabledAPISets: "",
 		EnableAllAPISets: true,
 
-		LaunchBrowser: false,
+		LaunchBrowser: false, // GUI
 		// Data directory holds app data
 		DataDirectory: node.DataDirectory,
 		// Web GUI static resources
@@ -774,7 +774,7 @@ var (
 	// DBVerifyCheckpointVersion is a checkpoint for determining if DB verification should be run.
 	// Any DB upgrading from less than this version to equal or higher than this version will be forced to verify.
 	// Update this version checkpoint if a newer version requires a new verification run.
-	DBVerifyCheckpointVersion       = "0.1.1"
+	DBVerifyCheckpointVersion       = "0.1.5"
 	dbVerifyCheckpointVersionParsed semver.Version
 )
 

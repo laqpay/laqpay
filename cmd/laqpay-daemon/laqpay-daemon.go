@@ -21,7 +21,7 @@ import (
 
 var (
 	// Version of the node. Can be set by -ldflags
-	Version = "0.1.1"
+	Version = "0.1.5"
 	// Commit ID. Can be set by -ldflags
 	Commit = ""
 	// Branch name. Can be set by -ldflags
@@ -54,6 +54,16 @@ var (
 	DefaultConnections = []string{
 		"138.201.196.174:6000",
 		"193.47.33.235:6000",
+		"91.188.222.22:6000",
+		"91.188.222.23:6000",
+		"91.188.222.24:6000",
+		"91.188.222.33:6000",
+		"193.47.33.204:6000",
+		"193.47.33.206:6000",
+		"193.47.33.242:6000",
+		"193.47.33.247:6000",
+		"193.47.33.249:6000",
+		"193.47.33.250:6000",
 	}
 
 	nodeConfig = laqpay.NewNodeConfig(ConfigMode, fiber.NodeConfig{

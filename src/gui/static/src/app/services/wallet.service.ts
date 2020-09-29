@@ -749,7 +749,7 @@ export class WalletService {
       softwareWallets = recoveredWallets;
 
       if (this.hwWalletService.hwWalletCompatibilityActivated) {
-        return this.loadHardwareWallets(wallets);
+        //return this.loadHardwareWallets(wallets);
       }
 
       return Observable.of(null);

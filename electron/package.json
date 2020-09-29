@@ -1,13 +1,13 @@
 {
     "name": "laqpay",
-    "productName": "Laqpay",
+    "productName": "LaQ Pay Wallet",
     "author": "laqpay",
     "main": "src/electron-main.js",
-    "version": "0.26.0",
-    "description": "laqpay wallet",
+    "version": "0.1.5",
+    "description": "Wallet for LaQ Pay",
     "license": "MIT",
     "build": {
-        "appId": "org.laqpay.laqpay",
+        "appId": "org.laqpay.wallet",
         "nsis": {
             "oneClick": false,
             "allowToChangeInstallationDirectory": true
@@ -75,7 +75,7 @@
         "postinstall": "electron-builder install-app-deps"
     },
     "devDependencies": {
-        "electron": "^9.1.0",
+        "electron": "^2.0.18",
         "electron-builder": "20.13.3"
     },
     "dependencies": {}

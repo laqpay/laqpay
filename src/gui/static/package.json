@@ -1,6 +1,6 @@
 {
-  "name": "desktopwallet",
-  "version": "0.0.0",
+  "name": "laqpay-gui",
+  "version": "0.1.5",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -35,7 +35,7 @@
     "zone.js": "^0.8.14",
     "bignumber.js": "^7.2.1",
     "base-x": "3.0.5",
-    "node-sass": "4.12.0"
+    "node-sass": "4.14.1"
   },
   "devDependencies": {
     "@angular/cli": "^1.7.3",
